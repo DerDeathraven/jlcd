@@ -1,0 +1,430 @@
+
+    /* SCSS HEX */
+$black: #101010;
+$red-ryb: #ff1d1eff;
+$international-klein-blue: #2a29b9ff;
+$mountbatten-pink: #977390ff;
+$uranian-blue: #b1ddf1ff;
+
+
+* {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+body{
+    font-family: 'Roboto Slab', serif;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, $uranian-blue	, $red-ryb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, $uranian-blue, $red-ryb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    
+    
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+}
+.sidecard{
+    background: $black;
+    color: white;
+    padding: 1em;
+    border-radius: .4em;
+    box-shadow: .2em .2em .1em $black;
+
+    width: 180px;
+    height: 250px;
+
+    .Container{
+        display: flex;
+        flex-direction: column;
+        .NavBar{
+            text-align: center;
+        }
+        .content{
+            .skills{
+                position: relative;
+                width:100%;
+                display:flex;
+                flex-direction:column;
+                .skillsFull{
+                    position: relative;
+                   
+                    display:flex;
+                    flex-direction:column;
+
+                    .skillsText{
+                        height: 5%;
+                        font-size: 0.7rem;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .moreSkillsContent{
+                        display:flex;
+                        flex-direction:column;
+                        
+                        .skillContainer{
+                            width: 100%;
+                            height: 30px;
+                            margin-bottom:15px;
+                            .skillHeader{
+                                height: 40%;
+                                font-size: 0.5rem;
+                                text-align: left;
+                            }
+                            .skillContent{
+                                margin: 0;
+                                height:20%;
+                                width: 100%;
+                                
+                                display:flex;
+                                div{
+                                    
+                                    height: 10%;
+                                }
+                                .leftBar{
+                                    background-color: grey;
+                                }
+                                .middleBar{
+                                    background-color: $red-ryb;
+                                
+                                }
+                                .rightBar{
+                                    background-color: grey;
+                                }
+                                
+                            }
+                            .yearContainer{
+                                
+                                position: relative;
+                                display: flex;
+                                font-size: 0.5rem;
+                                height:30%;
+                                width: 180px;
+                                .fullBar{
+                                   position: absolute;
+                                   height: 20px;
+                                   width: 20px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    .barContainer{
+                                        height: 50%;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content:center;
+                                        .bar{
+                                            height: 100%;
+                                            width: 5%;
+                                            background-color: grey;
+                                        }
+                                    }
+                                    .barText{
+                                        font-size: 0.3rem;
+                                        text-align: center;
+                                        height: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+    
+}
+.mainPages{
+    
+    background: $black;
+    color: white;
+    padding: 1em;
+    border-radius: .4em;
+    box-shadow: .2em .2em .1em $black;
+    
+    a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    .Container {
+        position: relative;
+        display: flex; 
+        flex-direction: column;
+        width: 400px;
+    height: 250px;
+       
+    
+        .NavBar{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+            .name{
+                width:75%;
+                height:100%;
+                text-align: right;
+            }
+            .icons{
+                width: 20%;
+                height: 100%;
+                
+                display: flex;
+                justify-content: space-evenly;
+                a{
+                    
+                    margin: auto;
+                    padding: 0;
+                }
+            }
+        }
+        .content{
+            width: 100%;
+            height:80%;
+            display: flex;
+            flex-direction: row;
+            
+            .aboutMe{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                .aboutMeOben{
+                    display: flex;
+                    height: 50%;
+                    .picture{   
+                        width:50%;   
+                        img{
+                            border-radius: 10px;
+                            width: 100px;
+                        }
+                    }
+                    .aboutMeText{
+                        padding: 10px;
+                        padding-top: 0px;
+                        position: relative;
+                        width: 100%;
+                        
+                        ul {
+                            list-style-type: none;
+                            margin: 0;
+                            font-size: 0.6rem;
+                            padding-left: 15px;
+
+                            }
+                        
+                       
+                    }
+                }
+                
+            }
+            .skills{
+                position: relative;
+                width:50%;
+                display:flex;
+                flex-direction:column;
+                .skillsFull{
+                    position: relative;
+                   
+                    display:flex;
+                    flex-direction:column;
+
+                    .skillsText{
+                        height: 5%;
+                        font-size: 0.7rem;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .skillsContent{
+                        display:flex;
+                        flex-direction:column;
+                        
+                        .skillContainer{
+                            width: 100%;
+                            height: 30px;
+                            margin-bottom:15px;
+                            .skillHeader{
+                                height: 40%;
+                                font-size: 0.5rem;
+                                text-align: left;
+                            }
+                            .skillContent{
+                                margin: 0;
+                                height:20%;
+                                width: 90%;
+                                
+                                display:flex;
+                                div{
+                                    
+                                    height: 15%;
+                                }
+                                .leftBar{
+                                    background-color: grey;
+                                }
+                                .middleBar{
+                                    background-color: $red-ryb;
+                                
+                                }
+                                .rightBar{
+                                    background-color: grey;
+                                }
+                                
+                            }
+                            .yearContainer{
+                                
+                                position: relative;
+                                display: flex;
+                                font-size: 0.5rem;
+                                height:30%;
+                                width: 180px;
+                                .fullBar{
+                                   position: absolute;
+                                   height: 20px;
+                                   width: 20px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    .barContainer{
+                                        height: 50%;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content:center;
+                                        .bar{
+                                            height: 100%;
+                                            width: 5%;
+                                            background-color: grey;
+                                        }
+                                    }
+                                    .barText{
+                                        font-size: 0.3rem;
+                                        text-align: center;
+                                        height: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .moreSkills{
+                    position: absolute;
+                    top: 0;
+                    right:-15px;
+                    height: 100%;
+                    width: 20px;
+                    font-size: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border-radius:5px;
+                    transition: all 0.3s;
+                    
+                    &:hover{
+                        
+                        background-color:#b1ddf155;
+                        .moreSkillsText{
+                            opacity: 1;
+                            
+                        }
+                    }
+                   .moreSkillsText{
+                       display: flex;
+                       flex-direction: column;
+                       justify-content:center;
+                       opacity: 1;
+                       i{
+                           text-align: center;
+                           font-size: 0.8rem;
+                       }
+                   }
+                }
+
+                
+            }
+            .projects{
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                .project{
+                    padding-left: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    width:33%;
+                    .projectHeader{
+                        height: 50%;
+                        img{
+                            border-radius: 10px;
+                            width:100%;
+                        }
+                    }
+                    .projectName{
+                        
+                        height: 10%;
+                        text-align: center;
+                    }
+                    .projectContent{
+                        padding-top: 10px;
+                        height: 33%;
+                        display: flex;
+                        width: 100%;
+                        flex-direction:row;
+                        .projectLeft{
+                            width:50%;
+                            display: flex;
+                            flex-direction: column;
+                            i{
+                                padding-bottom: 5px ;
+                                padding-left: 15px ;
+                            }
+                            object{
+                                padding-bottom: 5px ;
+                                padding-left: 15px ;
+                                width:35%;
+                            }
+                            
+                        }
+                        .projectRight{
+                            width:50%;
+                            font-size: 0.35rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .footer{
+            width:100%;
+            height: 10%;
+            display: flex;
+            .rotationHelper{
+                width:80%;
+                text-align: center;
+            }
+            .rotationHelperIcon{
+                width: 10%;
+                height: 100%;
+               
+                margin: auto;
+                i{
+                    margin: auto;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                }
+               
+            }
+            .floatRight{
+                text-align: right;
+            }
+        }
+    
+        }
+        
+}
+
+
