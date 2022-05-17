@@ -1,4 +1,4 @@
-
+const DEBUG = false
 var camera, scene, renderer;
 
 var scene2, renderer2;
@@ -57,8 +57,13 @@ function init() {
     main =  createMainPage("MainPage")
     secondMain =  createMainPage("BackPage")
     sideCard = generateSideCard()
+    if(DEBUG){
+        secondMain.rotation.y = 0
+        main.rotation.y = Math.PI
+    }else{
     secondMain.rotation.y = Math.PI
     secondMain.visible = false;
+    }
     if(!media){
           main.position.z = -600
           secondMain.position.z = -600
@@ -81,16 +86,7 @@ function onDocumentMouseMove( e) {
 }
 
 function mouseUp( e ) {
-    state.mousedown = false
     
-    if(state.frontside){
-        main.rotation.y = 0;
-        secondMain.rotation.y = Math.PI;
-    
-    }else{
-        main.rotation.y = Math.PI;
-        secondMain.rotation.y = 0;
-    }
 }
 
 function animate(time) {

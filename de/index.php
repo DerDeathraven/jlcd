@@ -7,31 +7,31 @@
     <title>JLCD Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/f3c11e6ecc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3c11e6ecc.js" crossorigin="anonymous"></script>
 
 
     <link rel="stylesheet" href="/css/style.css">
 
     <script src="https://threejs.org/build/three.min.js" defer></script>
-<script src="https://threejs.org/examples/js/controls/OrbitControls.js" defer></script>
-<script src="https://threejs.org/examples/js/renderers/CSS3DRenderer.js" defer></script>
-<script src="/javascript/lib/tween.js" defer></script>
-<script src="/javascript/lib/three-interaction.js" defer></script>
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous" defer></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js" defer></script>
+    <script src="https://threejs.org/examples/js/renderers/CSS3DRenderer.js" defer></script>
+    <script src="/javascript/lib/tween.js" defer></script>
+    <script src="/javascript/lib/three-interaction.js" defer></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous" defer></script>
 
 
-<script src="/javascript/generateSkillsTimeline.js" defer></script>
-<script src="/javascript/stateMachine.js" defer></script>
-<script src="/javascript/sidecard.js" defer></script>
-<script src="/javascript/generateProjects.js" defer></script>
-<script src="/javascript/Main.js" defer></script>
+    <script src="/javascript/generateSkillsTimeline.js" defer></script>
+    <script src="/javascript/stateMachine.js" defer></script>
+    <script src="/javascript/sidecard.js" defer></script>
+    <script src="/javascript/generateProjects.js" defer></script>
+    <script src="/javascript/Main.js" defer></script>
 
-<script src="/javascript/jqueryTrigger.js" defer></script>
+    <script src="/javascript/jqueryTrigger.js" defer></script>
 
 
 
@@ -125,7 +125,7 @@
         
         <div class="content">
            <div class="projects">
-
+               
            </div>
            
         </div>
