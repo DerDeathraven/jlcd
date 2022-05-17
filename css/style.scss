@@ -320,52 +320,18 @@ body {
                 }
             }
             .projects {
+                accent-color: white;
                 position: relative;
                 width: 100%;
                 height: 100%;
-
+                
                 display: flex;
-                .project {
-                    padding-left: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    width: 33%;
-                    .projectHeader {
-                        height: 50%;
-                        img {
-                            border-radius: 10px;
-                            width: 100%;
-                        }
-                    }
-                    .projectName {
-                        height: 10%;
-                        text-align: center;
-                    }
-                    .projectContent {
-                        padding-top: 10px;
-                        height: 33%;
-                        display: flex;
-                        width: 100%;
-                        flex-direction: row;
-                        .projectLeft {
-                            width: 50%;
-                            display: flex;
-                            flex-direction: column;
-                            i {
-                                padding-bottom: 5px;
-                                padding-left: 15px;
-                            }
-                            object {
-                                padding-bottom: 5px;
-                                padding-left: 15px;
-                                width: 35%;
-                            }
-                        }
-                        .projectRight {
-                            width: 50%;
-                            font-size: 0.35rem;
-                        }
-                    }
+                flex-direction: column;
+                .timeline{
+                    height:90%;
+                }
+                .projectScrollbar {
+                    width: 100%;
                 }
             }
         }
@@ -396,38 +362,18 @@ body {
     }
 }
 
-.timelineContainer {
-    height: 100%;
-    width: 100%;
-    .timeline {
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 15vh;
-        background: lime;
-        .dividerContainer {
-            position: absolute;
-            top: 0;
-            padding: 20px;
-            .dividerYear{
-
-            }
-        }
-    }
-    .sliderbase {
-        position: relative;
-        margin-top: 1vh;
-        height: 2vh;
-        background: red;
-        .slider {
-            height: 2vh;
-            width: 2vw;
-            background: blue;
-            position: absolute;
-            top: 0px;
-        }
-    }
-}
 
 
+
+input[type='range']::-webkit-slider-runnable-track {
+    border-radius:10px;
+    background-color: $red-ryb;
+   
+  }
+  input[type='range']::-webkit-slider-thumb {
+   
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    color: white;
+  }
+  

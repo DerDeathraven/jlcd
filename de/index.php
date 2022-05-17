@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/f3c11e6ecc.js" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css"  <?php time(); ?>>
 
     <script src="https://threejs.org/build/three.min.js" defer></script>
     <script src="https://threejs.org/examples/js/controls/OrbitControls.js" defer></script>
@@ -125,7 +125,10 @@
         
         <div class="content">
            <div class="projects">
-               
+               <div class="timeline">
+
+               </div>
+               <input type="range" name="scrollbar" class="projectScrollbar" min="0" max="100" value="0">
            </div>
            
         </div>

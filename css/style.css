@@ -454,78 +454,25 @@ body {
 }
 
 .mainPages .Container .content .projects {
+  accent-color: white;
   position: relative;
   width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.mainPages .Container .content .projects .project {
-  padding-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 33%;
-}
-
-.mainPages .Container .content .projects .project .projectHeader {
-  height: 50%;
-}
-
-.mainPages .Container .content .projects .project .projectHeader img {
-  border-radius: 10px;
-  width: 100%;
-}
-
-.mainPages .Container .content .projects .project .projectName {
-  height: 10%;
-  text-align: center;
-}
-
-.mainPages .Container .content .projects .project .projectContent {
-  padding-top: 10px;
-  height: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.mainPages .Container .content .projects .project .projectContent .projectLeft {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.mainPages .Container .content .projects .project .projectContent .projectLeft i {
-  padding-bottom: 5px;
-  padding-left: 15px;
+.mainPages .Container .content .projects .timeline {
+  height: 90%;
 }
 
-.mainPages .Container .content .projects .project .projectContent .projectLeft object {
-  padding-bottom: 5px;
-  padding-left: 15px;
-  width: 35%;
-}
-
-.mainPages .Container .content .projects .project .projectContent .projectRight {
-  width: 50%;
-  font-size: 0.35rem;
+.mainPages .Container .content .projects .projectScrollbar {
+  width: 100%;
 }
 
 .mainPages .Container .footer {
@@ -557,41 +504,14 @@ body {
   text-align: right;
 }
 
-.timelineContainer {
-  height: 100%;
-  width: 100%;
+input[type='range']::-webkit-slider-runnable-track {
+  border-radius: 10px;
+  background-color: #ff1d1eff;
 }
 
-.timelineContainer .timeline {
-  overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  height: 15vh;
-  background: lime;
-}
-
-.timelineContainer .timeline .dividerContainer {
-  position: absolute;
-}
-
-.timelineContainer .sliderbase {
-  position: relative;
-  margin-top: 1vh;
-  height: 2vh;
-  background: red;
-}
-
-.timelineContainer .sliderbase .slider {
-  height: 2vh;
-  width: 2vw;
-  background: blue;
-  position: absolute;
-  top: 0px;
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

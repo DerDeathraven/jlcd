@@ -1,4 +1,4 @@
-const DEBUG = false
+const DEBUG = true
 var camera, scene, renderer;
 
 var scene2, renderer2;
