@@ -7,8 +7,8 @@
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
-  background: #FEAC5E;
+  font-family: "Roboto Slab", serif;
+  background: #feac5e;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(45deg, #b1ddf1ff, #ff1d1eff);
@@ -22,7 +22,7 @@ body {
   background: #101010;
   color: white;
   padding: 1em;
-  border-radius: .4em;
+  border-radius: 0.4em;
   -webkit-box-shadow: 0.2em 0.2em 0.1em #101010;
           box-shadow: 0.2em 0.2em 0.1em #101010;
   width: 180px;
@@ -170,7 +170,7 @@ body {
   background: #101010;
   color: white;
   padding: 1em;
-  border-radius: .4em;
+  border-radius: 0.4em;
   -webkit-box-shadow: 0.2em 0.2em 0.1em #101010;
           box-shadow: 0.2em 0.2em 0.1em #101010;
 }
@@ -555,5 +555,43 @@ body {
 
 .mainPages .Container .footer .floatRight {
   text-align: right;
+}
+
+.timelineContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.timelineContainer .timeline {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 15vh;
+  background: lime;
+}
+
+.timelineContainer .timeline .dividerContainer {
+  position: absolute;
+}
+
+.timelineContainer .sliderbase {
+  position: relative;
+  margin-top: 1vh;
+  height: 2vh;
+  background: red;
+}
+
+.timelineContainer .sliderbase .slider {
+  height: 2vh;
+  width: 2vw;
+  background: blue;
+  position: absolute;
+  top: 0px;
 }
 /*# sourceMappingURL=style.css.map */

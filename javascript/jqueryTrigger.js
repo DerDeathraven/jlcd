@@ -46,18 +46,33 @@ function handleEvents(reset = false){
     }
 
 
-    $(".footer").on("mousedown",e=>{
+    $(".rotationHelper").on("mousedown",e=>{
         state.mousedown = true
         state.oldMouseSide = state.frontside
-        console.log("test")
     })
     $(document).on("mouseup",e=>{
-        state.mousedown = false
+        
         if(state.oldMouseSide !== state.frontside){
             state.oldMouseSide = state.frontside
             handleEvents(true)
         }
+       // main.rotation.y = main.rotation.y % (Math.PI * 2)
+      //  secondMain.rotation.y = secondMain.rotation.y % (Math.PI * 2)
+        if(state.mousedown) {
+            if(state.frontside){
+                secondMain.rotation.y = Math.PI;
+                rotationPos.y = main.rotation.y
+            
+            }else{
+                main.rotation.y = Math.PI;
+                rotationPos.y = secondMain.rotation.y
+            }
+            state.oldSide = state.frontside
+            returnHome.start()
+            state.mousedown = false
+        }
     })
+    
     
     $(".rotate-left").on("click",e=>{
         e.preventDefault()
@@ -75,6 +90,23 @@ function handleEvents(reset = false){
         state.floatIn =  !state.floatIn
         
     })
+    $(".sliderbase").on("mousemove", e => {
+        dummy = e.clientX - $(".sliderbase").offset().left
+        if (dummy > 0 && dummy ) {
+    
+            $(".slider").show()
+            $(".slider").css({
+    
+                left: dummy*(parseInt($(".rendererClass").css("perspective"))/1000)
+            })
+           
+            console.log({"slider":$(".rendererClass").css("perspective"),"client":e.clientX})
+        } else {
+            $(".slider").hide()
+        }
+    
+    })
+    
 
 
 }

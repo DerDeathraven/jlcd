@@ -31,10 +31,10 @@ var projects = [
     },
 ];
 
-projects.forEach(e=>{
-    console.log(e)
-    $(".projects").append(generateGithubProject(e))
-})
+//projects.forEach(e=>{
+   // console.log(e)
+   // $(".projects").append(generateGithubProject(e))
+//})
 
 
 function generateGithubProject(project){

@@ -9,7 +9,8 @@ var  easeIn
 var  easeOut
 var moveMain
 var moveMainBack
-
+var rotationPos = {x:0,y:0}
+var returnHome
 
 function generateSideCard(){
         generateMoreSkills()
@@ -70,5 +71,23 @@ function initTween(){
     })
     moveMainBack.easing(TWEEN.Easing.Exponential.InOut)
 
-
+    returnHome = new TWEEN.Tween(rotationPos).to({x:0,y:0},500)
+    returnHome.onUpdate(e=>{
+       
+            if(state.oldSide){
+            main.rotation.y = rotationPos.y
+            }else{
+            secondMain.rotation.y = rotationPos.y 
+            }
+        
+    }).onComplete(e=>{
+        if(state.oldSide){
+            main.rotation.y = 0
+            secondMain.rotation.y = Math.PI
+            }else{
+            secondMain.rotation.y = 0
+            main.rotation.y = Math.PI
+            }
+    })
+    returnHome.easing(TWEEN.Easing.Exponential.Out)
 }

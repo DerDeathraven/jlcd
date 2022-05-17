@@ -21,19 +21,12 @@ function generateMoreSkills(skill,startDate,endDate){
         {
             "name":"Three.js",
             "startDate":2021,
-            
-
         }, 
         
         {
             "name":"ROS",
             "startDate":2021,
-        },
-        
-        
-        
-       
-        
+        },        
         ]
 
         skills.forEach(f=>{
