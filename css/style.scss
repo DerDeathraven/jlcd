@@ -1,9 +1,9 @@
 /* SCSS HEX */
 $black: #101010;
-$red-ryb: #ff1d1eff;
-$international-klein-blue: #2a29b9ff;
-$mountbatten-pink: #977390ff;
-$uranian-blue: #b1ddf1ff;
+$red-ryb: #ff1d1e;
+$international-klein-blue: #2a29b9;
+$mountbatten-pink: #977390;
+$uranian-blue: #b1ddf1;
 
 * {
     -webkit-font-smoothing: subpixel-antialiased;
@@ -329,9 +329,87 @@ body {
                 flex-direction: column;
                 .timeline{
                     height:90%;
+                    width:100%;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    overflow: hidden;
+                    .timelineContent {
+                        height:100%;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 4px;
+                        position:absolute;
+                        .projectYear{
+                            background-color: lighten($black, 10%);                            
+                            width: 100%;
+                            height:100%;
+                            display: flex;
+                            flex-direction: column;
+                            .yearText{
+                                text-align: center;
+                                height:15%;
+                            }
+                            .projectContainer{
+                                width: 100%;
+                                height:85%;
+                                position: relative;
+                                display: flex;
+                                flex-direction: row;
+                                .project{
+                                    border-radius: 5px;
+                                    margin: 5px;
+                                    background-color: lighten($black, 3%);
+                                    position: relative;
+                                    display: flex;
+                                    width: 110px;
+                                    flex-direction: column;
+                                    
+                                    .projectHeader{
+                                        margin-top: 5px;
+                                        position: relative;
+                                        width: 100%;
+                                        height: 40%;
+                                        display: flex;
+                                        justify-content: center;
+
+                                        .projectPicture{
+                                            height: 100%;
+                                            aspect-ratio: 16/9;
+                                           
+                                            object-fit: cover;
+                                            
+                                        }
+                                    }
+                                    .projectContent{
+                                        height:55%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-evenly;
+                                        .projectTitle{
+                                            text-align: center;
+                                            font-size: 0.6em;
+                                            height:20%;
+                                        }
+                                        .projectContentText{
+                                            text-align: center;
+                                            font-size: 0.3em;
+                                            height:60%;
+                                        }
+                                        .projectGithub{
+                                            text-align: center;
+                                            height:20%;
+                                            margin-bottom:5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 .projectScrollbar {
                     width: 100%;
+                    height:10%;
                 }
             }
         }

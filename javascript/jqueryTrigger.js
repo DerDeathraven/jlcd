@@ -90,21 +90,15 @@ function handleEvents(reset = false){
         state.floatIn =  !state.floatIn
         
     })
-    $(".sliderbase").on("mousemove", e => {
-        dummy = e.clientX - $(".sliderbase").offset().left
-        if (dummy > 0 && dummy ) {
-    
-            $(".slider").show()
-            $(".slider").css({
-    
-                left: dummy*(parseInt($(".rendererClass").css("perspective"))/1000)
-            })
-           
-            console.log({"slider":$(".rendererClass").css("perspective"),"client":e.clientX})
-        } else {
-            $(".slider").hide()
-        }
-    
+    $(".projectScrollbar").on("input",e=>{
+       var value =  $(".projectScrollbar").val() /100
+       
+       
+       
+       var width = parseInt($(".timelineContent").width()) 
+       var realLength = width-$(".timeline").width()
+       console.log($(".timelineContent").width())
+       $(".timelineContent").css("left",`${-(value*realLength)}px`)
     })
     
 
@@ -116,4 +110,5 @@ $(document).ready(e=>{
     console.log("test")
     var time = new Date()
     $("#geburtstagSpan").text(time.getFullYear()-YEAR_OF_BIRTH)
+    
 })

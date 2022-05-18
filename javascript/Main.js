@@ -1,4 +1,4 @@
-const DEBUG = true
+const DEBUG = false
 var camera, scene, renderer;
 
 var scene2, renderer2;
@@ -27,6 +27,7 @@ var media = window.innerWidth> 600
 
 init();
 animate(performance.now());
+
 
 function init() {
     renderer2 = new THREE.CSS3DRenderer({alpha:true,antialias:true});

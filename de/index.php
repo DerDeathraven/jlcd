@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/f3c11e6ecc.js" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="/css/style.css"  <?php time(); ?>>
+    <link rel="stylesheet" href="/css/style.css" >
 
     <script src="https://threejs.org/build/three.min.js" defer></script>
     <script src="https://threejs.org/examples/js/controls/OrbitControls.js" defer></script>
@@ -28,7 +28,7 @@
     <script src="/javascript/generateSkillsTimeline.js" defer></script>
     <script src="/javascript/stateMachine.js" defer></script>
     <script src="/javascript/sidecard.js" defer></script>
-    <script src="/javascript/generateProjects.js" defer></script>
+    <script src="/javascript/projectTimeline.js" defer></script>
     <script src="/javascript/Main.js" defer></script>
 
     <script src="/javascript/jqueryTrigger.js" defer></script>
