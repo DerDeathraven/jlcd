@@ -12,11 +12,19 @@ body {
 }
 
 .container .title {
+  z-index: 99;
   height: 10%;
+  width: 100%;
+  position: absolute;
+}
+
+.container .title .titleText {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .container .choseContent {
-  height: 90%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +55,11 @@ body {
   transition: all 0.2s;
 }
 
+.container .choseContent .sides:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .container .choseContent .sides.left {
   background-color: #ff1d1e;
 }
@@ -56,6 +69,7 @@ body {
 }
 
 .container .choseContent .sides .header .headerText {
+  font-size: 2em;
   text-align: center;
 }
 

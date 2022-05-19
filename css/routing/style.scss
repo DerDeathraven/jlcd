@@ -14,17 +14,24 @@ body{
     width: 100vw;
     height: 100vh;
     .title{
+        z-index: 99;
+        .titleText{
+            font-size: 1.5em;
+            text-align: center;
+        }
         height: 10%;
+        width: 100%;
+        position: absolute
     }
     .choseContent{
-        height:90%;
+        height:100%;
         display:flex;
         flex-direction:row;
         .sides{
             margin:0;
             position: relative;
             &:hover{
-                
+                transform:scale(1.02)
             }
             filter:blur(0.5);
             width:50%;
@@ -41,7 +48,7 @@ body{
             }
             .header{
                 .headerText{
-                    
+                    font-size: 2em;
                     text-align:center;
                 }
             }
