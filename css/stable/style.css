@@ -16,6 +16,93 @@ body {
   height: 100vh;
 }
 
+.container .section.landing .landingContainer .landingCardContainer {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20%;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName {
+  width: 45%;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName span.hidding {
+  display: inline-block;
+  overflow: hidden;
+  width: 0px;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName:hover .jean {
+  width: 50px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName:hover .luc {
+  width: 30px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName:hover .chrisoph {
+  width: 90px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName:hover .dittler {
+  width: 60px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardLeft {
+  width: 50%;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardRight {
+  width: 50%;
+}
+
 .container .section.landing .landingContainer .landingText {
   width: 50vw;
 }

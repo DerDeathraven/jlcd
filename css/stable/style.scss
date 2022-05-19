@@ -18,6 +18,58 @@ body{
             .landingContainer{
                 display:flex;
                 height: 100vh;
+                .landingCardContainer{
+                    width:50vw;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    .landingCard{
+                        display: flex;
+                        flex-direction: column;
+                        .landingCardHeader{
+                            display:flex;
+                            justify-content:center;
+                            
+                            height:20%;
+                            .landingCardName{
+                                width:45%;
+                                font-size:1.5em;
+                                display: flex;
+                                justify-content:center;
+                                span.hidding {
+                                    display: inline-block;
+                                    overflow: hidden;
+                                    width: 0px;
+                                    transition: width .5s;
+                                }
+                                &:hover{
+                                    .jean{
+                                        width:50px;
+                                    }
+                                    .luc{
+                                        width:30px;
+                                    }
+                                    .chrisoph{
+                                        width:90px;
+                                    }
+                                    .dittler{
+                                        width:60px;
+                                    }
+                                }
+                            }
+                        }
+                        .landingCardContent{
+                            display:flex;
+                            flex-direction:row;
+                            .landingCardLeft{
+                                width:50%;
+                            }
+                            .landingCardRight{
+                                width:50%;
+                            }
+                        }
+                    }
+                }
                 .landingText{
                     width:50vw;
                 }
