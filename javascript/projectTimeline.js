@@ -117,7 +117,7 @@ class Project {
         $(header).append(headerPicture).addClass("projectHeader");
         $(content).addClass("projectContent");
 
-        $(container).addClass("project").append(header).append(content);
+        $(container).addClass("project").addClass(this.name).append(header).append(content);
 
         return container
     }
@@ -147,7 +147,7 @@ function generateTimeline(){
              name: '"Junior" Sys-Admin',
              github: "https://wp.schloss-rohlstorf.de/",
              githubSymbole: '<i class="fa-brands fa-fort-awesome-alt"></i>',
-             content: "I grew up with macs so my understanding of them was pretty good. I noticed that the Sys-Admin struggled with managing them. There i saw the chance help out. So i did",
+             content: "Growing up using macs in my spare time, I developed a good understanding of the ins and outs of the system. I quickly realized my potential to help the Sys-Admin at my school manage their computers.",
              picture: "/images/Gut_Rohlstorf_Herrenhaus.jpg"
             },
             
@@ -157,9 +157,9 @@ function generateTimeline(){
     2016:{
         "projects":[
              {
-              name: " honorary award",
+              name: " Honorary Award",
               github: "google.de",
-              content: "For my duties as a Sys-Admin",
+              content: "For my duties as a Sys-Admin at my school I was given an honory award by the school's council.",
               githubSymbole:" ",
               picture: "/images/object_bg.jpg"
              },
@@ -182,7 +182,7 @@ function generateTimeline(){
              {
                 name: "Family business",
                 github: "https://www.webspezi.com/de/",
-                content: "Starting to work for my mom. Work such as: on-side customer service, setting up maschines, training with elderly",
+                content: "I started working for my mother, who is a WebDev and is working in the business since 1997. My duties included administration of online meetings, on-site deployment and zoom trainings ",
                 githubSymbole: '<i class="fa-solid fa-link"></i>',
                 picture: "/images/20_Jahre_webspezi.png"
              }
@@ -196,7 +196,7 @@ function generateTimeline(){
              {
               name: "Art Collection",
               github: "https://kunst.breede.sh/kunstwerke/0",
-              content: "School project: Less programming on my part and more managment and design ",
+              content: "I did a school project together with 2 others. My work focused on managing of ideas and concepts ",
               githubSymbole:'<i class="fa-solid fa-link"></i>',
               picture: "/images/bbz.png"
              },
@@ -207,6 +207,20 @@ function generateTimeline(){
                 githubSymbole:'<i class="fa-solid fa-link"></i>',
                 picture: "/images/csm_Eingang-UNI-Studenten_CORP_Rene-Kube_IMG_6016_neu_97e9451734.jpg"
             },
+            
+            
+                
+         ]
+     },
+     2022:{
+        "projects":[
+            {
+                name: "Hako",
+                github: "https://www.hako.com/en/",
+                content: "Crossing the lines of webdevelopment and ROS. Adapting my knowledge of NodeJS to help analyze test reports. All this while being able to peek in to all sorts of Topics of intrest",
+                githubSymbole:'<i class="fa-solid fa-briefcase"></i>',
+                picture: "/images/Termine_Header.jpg"
+            },
             {
                 name: "StreamPipe",
                 github: "https://www.hako.com/en/",
@@ -214,12 +228,6 @@ function generateTimeline(){
                 githubSymbole:'<i class="fa-solid fa-link"></i>',
                 picture: "/images/csm_Eingang-UNI-Studenten_CORP_Rene-Kube_IMG_6016_neu_97e9451734.jpg"
             },
-            
-                
-         ]
-     },
-     2022:{
-        "projects":[
              {
               name: "This Website",
               github: "https://github.com/DerDeathraven/jlcd",
