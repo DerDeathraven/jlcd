@@ -140,12 +140,13 @@ body {
 
 .container .choseContent .sides .content {
   text-align: center;
-  display: none;
+  overflow: hidden;
+  height: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .container .choseContent .sides:hover .content {
-  display: block;
+  height: 10%;
 }
 /*# sourceMappingURL=style.css.map */
