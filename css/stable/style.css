@@ -185,5 +185,210 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #434343;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.skills .skillsHeader {
+  height: 10%;
+}
+
+.container .section.skills .skillsContainer {
+  height: 90%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent {
+  height: 100%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsList {
+  height: 50%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  accent-color: white;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline {
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  height: 90%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 4px;
+  position: absolute;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear {
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .yearText {
+  text-align: center;
+  height: 15%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project {
+  padding: 2px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #181818;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectHeader {
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectHeader .projectPicture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent {
+  height: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectTitle {
+  text-align: center;
+  font-size: 0.6em;
+  height: 20%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
+  text-align: center;
+  font-size: 0.3em;
+  height: 60%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectGithub {
+  text-align: center;
+  height: 20%;
+  margin-bottom: 5px;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectGithub a {
+  color: white;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar {
+  margin: auto;
+  width: 50%;
+  height: 10%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar::-webkit-slider-runnable-track {
+  border-radius: 10px;
+  background-color: #ff1d1e;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  color: white;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar::-moz-range-thumb {
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

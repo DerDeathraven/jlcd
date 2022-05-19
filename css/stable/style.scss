@@ -142,6 +142,153 @@ body{
             width: 100vw;
             height: 100vh;
             background-color:lighten($black, 20%);
+            display: flex;
+            flex-direction: column;
+            .skillsHeader{
+                height: 10%;
+            }
+            .skillsContainer{
+                height: 90%;
+                .skillsContainerContent{
+                    height: 100%;
+                    .skillsList{
+                        height:50%;
+                    }
+                    .projectsContainer{
+
+                        height: 50%;
+                        display: flex;
+                        justify-content:center;
+                        .projects {
+                            transform: scale(2.0);
+                            accent-color: white;
+                            position: relative;
+                            
+                            width: 50%;
+                            height: 50%;
+                            
+                            display: flex;
+                            flex-direction: column;
+                            .timeline{
+                                border-radius:5px;
+                                color: white;
+                                margin:auto;
+                                height:90%;
+                                width:50%;
+                                display: flex;
+                                flex-direction: column;
+                                position: relative;
+                                overflow: hidden;
+                                .timelineContent {
+                                    height:100%;
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 4px;
+                                    position:absolute;
+                                    .projectYear{
+                                        background-color: lighten($black, 10%);                            
+                                        width: 100%;
+                                        height:100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        .yearText{
+                                            text-align: center;
+                                            height:15%;
+                                        }
+                                        .projectContainer{
+                                            width: 100%;
+                                            height:85%;
+
+                                            position: relative;
+                                            display: flex;
+                                            flex-direction: row;
+                                            .project{
+                                                padding:2px;
+                                                border-radius: 5px;
+                                                margin: 5px;
+                                                background-color: lighten($black, 3%);
+                                                position: relative;
+                                                display: flex;
+                                                width: 110px;
+                                                flex-direction: column;
+                                                
+                                                .projectHeader{
+                                                    margin-top: 5px;
+                                                    
+                                                    position: relative;
+                                                    width: 100%;
+                                                    height: 40%;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    
+            
+                                                    .projectPicture{
+                                                        object-fit: cover;
+                                                        height: 100%;
+                                                        aspect-ratio: 16/9;
+                                                       
+                                                        
+                                                        
+                                                    }
+                                                }
+                                                .projectContent{
+                                                    height:55%;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: space-evenly;
+                                                    .projectTitle{
+                                                        text-align: center;
+                                                        font-size: 0.6em;
+                                                        height:20%;
+                                                    }
+                                                    .projectContentText{
+                                                        text-align: center;
+                                                        font-size: 0.3em;
+                                                        height:60%;
+                                                    }
+                                                    .projectGithub{
+                                                        a{
+                                                            color:white;
+                                                        }
+                                                        text-align: center;
+                                                        height:20%;
+                                                        margin-bottom:5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .projectScrollbar {
+                                margin:auto;
+                                width: 50%;
+                                height:10%;
+                                &::-webkit-slider-runnable-track {
+                                    border-radius:10px;
+                                    background-color: $red-ryb;
+                                   
+                                  }
+                                &::-webkit-slider-thumb {
+   
+                                    -webkit-appearance: none;
+                                    cursor: ew-resize;
+                                    color: white;
+                                  }
+                                &::-moz-range-thumb{
+                                    
+                                    -webkit-appearance: none;
+                                    cursor: ew-resize;
+                                    color: white;
+                                }
+                               
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
         }
     }
 }

@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous" defer></script>
     
     <script src="/javascript/stable/jqueryTrigger.js" defer></script>
+    <script src="/javascript/stable/projectTimeline-stable.js" defer></script>
     <script src="/javascript/stable/main.js" defer></script>
 </head>
 <body>
@@ -73,7 +74,27 @@
                 <div class="skillsHeaderText">
                     Skills
                 </div>
+                
             </div>
+            <div class="skillsContainer">
+                    <div class="skillsContainerContent">
+                        <div class="skillsList">
+
+                        </div>
+                        <div class="projectsContainer">
+                            <div class="projects">
+                                <div class="timeline">
+
+                                </div>
+                                
+                                    <input type="range" name="scrollbar" class="projectScrollbar" min="0" max="100" value="0">
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
         </div>
     </div>
 </body>
