@@ -1,0 +1,60 @@
+$black: #101010;
+$red-ryb: #ff1d1e;
+$international-klein-blue: #2a29b9;
+$mountbatten-pink: #977390;
+$uranian-blue: #b1ddf1;
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    color:white;
+    width: 100vw;
+    height: 100vh;
+    .title{
+        height: 10%;
+    }
+    .choseContent{
+        height:90%;
+        display:flex;
+        flex-direction:row;
+        .sides{
+            margin:0;
+            position: relative;
+            &:hover{
+                
+            }
+            filter:blur(0.5);
+            width:50%;
+            height: 100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            transition:all 0.2s;
+            &.left{
+                background-color:$red-ryb;
+            }
+            &.right{
+                background-color:lighten($black, 20%);
+            }
+            .header{
+                .headerText{
+                    
+                    text-align:center;
+                }
+            }
+            .content{
+                text-align:center;
+                display:none;
+                transition:all 0.2s;
+            }
+            &:hover{
+                .content{
+                    display:block
+                }
+            }
+        }
+    }
+}
