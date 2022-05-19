@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+.container {
+  font-family: "Roboto Slab", serif;
+  overflow: hidden;
+}
+
 .container .section.landing {
   width: 100vw;
   height: 100vh;
@@ -17,6 +22,7 @@ body {
 }
 
 .container .section.landing .landingContainer .landingCardContainer {
+  position: relative;
   width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +37,13 @@ body {
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard {
+  overflow: hidden;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  width: 60%;
+  aspect-ratio: 16/9;
+  background-color: #101010;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +53,22 @@ body {
           flex-direction: column;
 }
 
+.container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .jean {
+  width: 50px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .luc {
+  width: 30px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .chrisoph {
+  width: 100px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .dittler {
+  width: 60px;
+}
+
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,11 +76,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 20%;
+  height: 10%;
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName {
-  width: 45%;
+  width: 60%;
   font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +88,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName span.hidding {
@@ -69,23 +102,8 @@ body {
   transition: width .5s;
 }
 
-.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName:hover .jean {
-  width: 50px;
-}
-
-.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName:hover .luc {
-  width: 30px;
-}
-
-.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName:hover .chrisoph {
-  width: 90px;
-}
-
-.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName:hover .dittler {
-  width: 60px;
-}
-
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent {
+  height: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,20 +119,66 @@ body {
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardRight {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .section.landing .landingContainer .landingText {
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardRight .landingText {
   width: 50vw;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardRight .landingCardRightText {
+  text-align: center;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardFooter {
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardFooter:hover {
+  cursor: pointer;
+  border-radius: 0 0 5px  5px;
+  background-color: #b1ddf155;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardFooter .landingCardFooterContent {
+  text-align: center;
 }
 
 .container .section.landing .landingContainer .profile {
+  position: relative;
   width: 50vw;
+  overflow: hidden;
 }
 
 .container .section.landing .landingContainer .profile img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  position: absolute;
+  left: -500px;
+  height: 100%;
+  aspect-ratio: 16/9;
 }
 
 .container .section.skills {

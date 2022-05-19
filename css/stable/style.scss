@@ -8,6 +8,8 @@ body{
     padding: 0;
 }
 .container{
+    font-family: "Roboto Slab", serif;
+    overflow: hidden;
     .section{
         &.landing{
 
@@ -18,66 +20,119 @@ body{
             .landingContainer{
                 display:flex;
                 height: 100vh;
+                
                 .landingCardContainer{
+                    position: relative;
                     width:50vw;
+                    
                     display:flex;
                     flex-direction: column;
                     justify-content:center;
+                    
                     .landingCard{
+                        overflow: hidden;
+                        border-radius: 5px;
+                        color:white;
+                        margin: auto;
+                        width:60%;
+                        aspect-ratio: 16/9;
+                        background-color: $black;
                         display: flex;
                         flex-direction: column;
+                        &:hover{
+                            .landingCardHeader{
+                                .landingCardName{
+                                .jean{
+                                    width:50px;
+                                }
+                                .luc{
+                                    width:30px;
+                                }
+                                .chrisoph{
+                                    width:100px;
+                                }
+                                .dittler{
+                                    width:60px;
+                                }
+                            }
+                        }
+                        }
                         .landingCardHeader{
                             display:flex;
                             justify-content:center;
                             
-                            height:20%;
+                            height:10%;
                             .landingCardName{
-                                width:45%;
+                                width:60%;
                                 font-size:1.5em;
                                 display: flex;
                                 justify-content:center;
+                                user-select: none;          
                                 span.hidding {
                                     display: inline-block;
                                     overflow: hidden;
                                     width: 0px;
                                     transition: width .5s;
                                 }
-                                &:hover{
-                                    .jean{
-                                        width:50px;
-                                    }
-                                    .luc{
-                                        width:30px;
-                                    }
-                                    .chrisoph{
-                                        width:90px;
-                                    }
-                                    .dittler{
-                                        width:60px;
-                                    }
-                                }
+                                
                             }
                         }
                         .landingCardContent{
+                            height: 75%;
                             display:flex;
                             flex-direction:row;
+                            
                             .landingCardLeft{
                                 width:50%;
                             }
                             .landingCardRight{
                                 width:50%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                               
+                                .landingText{
+                                    width:50vw;
+                                    
+                                }
+                                .landingCardRightText{
+                                    
+                                    text-align: center;
+                                    
+                                }
+                            }
+                        }
+                        .landingCardFooter{
+                            height:15%;
+                            display: flex;
+                            width:100%;
+                            flex-direction:row;
+                            justify-content:center;
+                            transition: all 0.2s;
+                           
+                            
+                            &:hover{
+                                cursor:pointer;
+                                border-radius:  0 0 5px  5px ;
+                                background-color:#b1ddf155;
+                                transform: scale(1.15);
+                            }
+                            .landingCardFooterContent{
+                                text-align:center;
                             }
                         }
                     }
                 }
-                .landingText{
-                    width:50vw;
-                }
+                
                 .profile{
+                    position: relative;
                     width: 50vw;
+                    overflow: hidden;
                     img{
-                        width: 100%;
-                        object-fit: cover;
+                        position: absolute;
+                        left: -500px;
+                        height:100%;
+                        aspect-ratio: 16/9;
                     }
                 }
             }
