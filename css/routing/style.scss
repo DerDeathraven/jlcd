@@ -99,12 +99,13 @@ body{
             }
             .content{
                 text-align:center;
-                display:none;
+                overflow: hidden;
+                height: 0;
                 transition:all 0.2s;
             }
             &:hover{
                 .content{
-                    display:block
+                    height:10%;
                 }
             }
         }
