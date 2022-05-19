@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container .section.landing {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ff1d1e;
+}
+
+.container .section.landing .landingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.container .section.landing .landingContainer .landingText {
+  width: 50vw;
+}
+
+.container .section.landing .landingContainer .profile {
+  width: 50vw;
+}
+
+.container .section.landing .landingContainer .profile img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .section.skills {
+  width: 100vw;
+  height: 100vh;
+  background-color: #434343;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+$black: #101010;
+$red-ryb: #ff1d1e;
+$international-klein-blue: #2a29b9;
+$mountbatten-pink: #977390;
+$uranian-blue: #b1ddf1;
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    .section{
+        &.landing{
+
+            width: 100vw;
+            height: 100vh;
+            background-color: $red-ryb;
+            
+            .landingContainer{
+                display:flex;
+                height: 100vh;
+                .landingText{
+                    width:50vw;
+                }
+                .profile{
+                    width: 50vw;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            
+        }
+        &.skills{
+            width: 100vw;
+            height: 100vh;
+            background-color:lighten($black, 20%);
+        }
+    }
+}

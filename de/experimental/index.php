@@ -45,7 +45,7 @@
 
 
 <div id="MainPage" hidden>
-    <div class="Container">
+<div class="Container">
         <div class="NavBar">
             <div class="name">
                 Jean-Luc Christoph Dittler
