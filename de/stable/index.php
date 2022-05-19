@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous" defer></script>
     
     <script src="/javascript/stable/jqueryTrigger.js" defer></script>
+    <script src="/javascript/stable/skills.js" defer></script>
     <script src="/javascript/stable/projectTimeline-stable.js" defer></script>
     <script src="/javascript/stable/main.js" defer></script>
 </head>
@@ -78,9 +79,12 @@
             </div>
             <div class="skillsContainer">
                     <div class="skillsContainerContent">
-                        <div class="skillsList">
+                        <div class="skillsListContainer">
+                            <div class="skillsList">
 
+                            </div>
                         </div>
+                        
                         <div class="projectsContainer">
                             <div class="projects">
                                 <div class="timeline">

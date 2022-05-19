@@ -2,6 +2,7 @@ class TimelineState{
     constructor(){
         this.sliderPosition = 0;
         this.mousedown = false;
+        
          
     }
 }
@@ -19,12 +20,34 @@ var timeline
  */
 
 class Timeline{
-    constructor(yearObj,domFather){
+    constructor(yearObj,domFather,skillsList,skillDom){
         this.sate = new TimelineState()
         this.years = []
         this.domFather = domFather
+        this.skills = new SkillList(skillDom,skillsList)
         this.fillYears(yearObj)
         this.drawTimeline()
+        var me = this
+        $(".project").on("click",(e)=>{
+            console.log("test")
+            if($(e.currentTarget).hasClass("active")){
+                $(e.currentTarget).removeClass("active")
+                me.skills.renderSkills()
+            }else{
+                console.log("war hier")
+                $(e.currentTarget).addClass("active")
+                var name = $(e.currentTarget).find(".projectTitle").text()
+                var skills = []
+                this.years.forEach(y=>{
+                    y.projects.forEach(p=>{
+                        if(p.name == name){
+                            skills = p.releatedSkills
+                        }
+                    })
+                })
+                me.skills.renderSkills(skills)
+            }
+        })
         
     }
     fillYears(yearObj){
@@ -106,6 +129,7 @@ class Project {
         this.githubSymbole = p.githubSymbole || '<i class="fa-brands fa-github-square"></i>'
         this.content = p.content;
         this.picture = p.picture;
+        this.releatedSkills = p.releatedSkills || []
         this.domElement = this.generateDomElement()
     }
     generateDomElement(){
@@ -116,7 +140,9 @@ class Project {
         $(headerPicture).attr("src", this.picture).addClass("projectPicture");
         $(header).append(headerPicture).addClass("projectHeader");
         $(content).addClass("projectContent");
-
+        if(this.releatedSkills.length>0){
+            $(container).addClass("hasSkills")
+        }
         $(container).addClass("project").append(header).append(content);
 
         return container
@@ -139,101 +165,3 @@ class Project {
     }
 
 }
-function generateTimeline(){
-    var projects = {
-        2014:{
-       "projects":[
-            {
-             name: '"Junior" Sys-Admin',
-             github: "https://wp.schloss-rohlstorf.de/",
-             githubSymbole: '<i class="fa-brands fa-fort-awesome-alt"></i>',
-             content: "I grew up with macs so my understanding of them was pretty good. I noticed that the Sys-Admin struggled with managing them. There i saw the chance help out. So i did",
-             picture: "/images/Gut_Rohlstorf_Herrenhaus.jpg"
-            },
-            
-               
-        ]
-    },
-    2016:{
-        "projects":[
-             {
-              name: " honorary award",
-              github: "google.de",
-              content: "For my duties as a Sys-Admin",
-              githubSymbole:" ",
-              picture: "/images/object_bg.jpg"
-             },
-             {
-                name: "First batch chat",
-                github: "https://github.com/DerDeathraven/Batchchat",
-                content: "My buddy and i designed a chat program wich had Batch as backend",
-                picture: "/images/old_batchchat.png"
-                },
-         ]
-     },
-     2018:{
-        "projects":[
-             {
-              name: "Final batch chat",
-              github: "https://github.com/DerDeathraven/Batchchat",
-              content: "I wanted to test my new gained skills. So i updated the old chat with an updated UI",
-              picture: "/images/Batchchat.png"
-             },
-             {
-                name: "Family business",
-                github: "https://www.webspezi.com/de/",
-                content: "Starting to work for my mom. Work such as: on-side customer service, setting up maschines, training with elderly",
-                githubSymbole: '<i class="fa-solid fa-link"></i>',
-                picture: "/images/20_Jahre_webspezi.png"
-             }
-            
-                
-         ]
-     },
-    
-     2021:{
-        "projects":[
-             {
-              name: "Art Collection",
-              github: "https://kunst.breede.sh/kunstwerke/0",
-              content: "School project: Less programming on my part and more managment and design ",
-              githubSymbole:'<i class="fa-solid fa-link"></i>',
-              picture: "/images/bbz.png"
-             },
-             {
-                name: "IT-Security",
-                github: "https://www.uni-luebeck.de/universitaet/universitaet.html",
-                content: "Starting my studies and extending my knowledge of JS in the background",
-                githubSymbole:'<i class="fa-solid fa-link"></i>',
-                picture: "/images/csm_Eingang-UNI-Studenten_CORP_Rene-Kube_IMG_6016_neu_97e9451734.jpg"
-            },
-            {
-                name: "StreamPipe",
-                github: "https://www.hako.com/en/",
-                content: "Developing a full-fledged ROS-Bag analytic-suite. Marking Timestamps,Adding comments and exporting them as PDF. Built with Nodejs and Socket.io. Sadly not open source",
-                githubSymbole:'<i class="fa-solid fa-link"></i>',
-                picture: "/images/csm_Eingang-UNI-Studenten_CORP_Rene-Kube_IMG_6016_neu_97e9451734.jpg"
-            },
-            
-                
-         ]
-     },
-     2022:{
-        "projects":[
-             {
-              name: "This Website",
-              github: "https://github.com/DerDeathraven/jlcd",
-              content: "Using Three.js and CSS3D. This developed out of a weekend of learning 3D modeling inside of a browser.",
-              picture: "/images/Bewerbungsfoto.jpg"
-             },
-            
-                
-         ]
-     },
-}
-    timeline = new Timeline(projects,$(".timeline"))
- 
- 
-     
- }
- generateTimeline()

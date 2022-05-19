@@ -195,7 +195,7 @@ body {
 }
 
 .container .section.skills .skillsHeader {
-  height: 10%;
+  height: 7%;
 }
 
 .container .section.skills .skillsContainer {
@@ -206,7 +206,120 @@ body {
   height: 100%;
 }
 
-.container .section.skills .skillsContainer .skillsContainerContent .skillsList {
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList {
+  border-radius: 5px 5px 0 0;
+  background-color: #101010;
+  padding-top: 2%;
+  padding-bottom: 10px;
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer {
+  color: white;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillHeader {
+  height: 40%;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent {
+  margin: 0;
+  height: 60%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent div {
+  margin: auto;
+  height: 30%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent .leftBar {
+  background-color: grey;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent .middleBar {
+  background-color: #ff1d1e;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent .rightBar {
+  background-color: grey;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.7rem;
+  height: 30%;
+  width: 180px;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer .fullBar {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer .fullBar .barContainer {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer .fullBar .barContainer .bar {
+  height: 100%;
+  width: 10%;
+  background-color: grey;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer .fullBar .barText {
+  font-size: 0.6rem;
+  text-align: center;
   height: 50%;
 }
 
@@ -221,6 +334,7 @@ body {
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects {
+  margin: auto;
   -webkit-transform: scale(2);
           transform: scale(2);
   accent-color: white;
@@ -237,7 +351,7 @@ body {
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline {
-  border-radius: 5px;
+  border-radius: 0 0 5px  5px;
   color: white;
   margin: auto;
   height: 90%;
@@ -251,6 +365,7 @@ body {
           flex-direction: column;
   position: relative;
   overflow: hidden;
+  background-color: #101010;
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent {
@@ -311,6 +426,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project.hasSkills {
+  background-color: #ff5051;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project.active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectHeader {

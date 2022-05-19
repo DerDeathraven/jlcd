@@ -144,23 +144,108 @@ body{
             background-color:lighten($black, 20%);
             display: flex;
             flex-direction: column;
+            
             .skillsHeader{
-                height: 10%;
+                height: 7%;
             }
             .skillsContainer{
                 height: 90%;
+             
+                
                 .skillsContainerContent{
                     height: 100%;
-                    .skillsList{
-                        height:50%;
-                    }
-                    .projectsContainer{
+                    .skillsListContainer{
+                        height: 40%;
+                        display: flex;
+                        justify-content:center;
+                        .skillsList {
+                            border-radius: 5px 5px 0 0;
+                            background-color: $black;
+                            padding-top: 2%;
+                            padding-bottom: 10px;
+                            position: relative;
+                           width: 50%;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            gap: 2%;
 
+                            .skillContainer {
+                                color:white;
+                                width: 200px;
+                                height: 30px;
+                                margin-bottom: 15px;
+                                .skillHeader {
+                                    height: 40%;
+                                    font-size: 0.9rem;
+                                    text-align: left;
+                                }
+                                .skillContent {
+                                    margin: 0;
+                                    height: 60%;
+                                    width: 90%;
+    
+                                    display: flex;
+                                    
+                                    div {
+                                        margin: auto;
+                                        height: 30%;
+                                    }
+                                    .leftBar {
+                                        background-color: grey;
+                                    }
+                                    .middleBar {
+                                        background-color: $red-ryb;
+                                    }
+                                    .rightBar {
+                                        background-color: grey;
+                                    }
+                                }
+                                .yearContainer {
+                                    position: relative;
+                                    display: flex;
+                                    font-size: 0.7rem;
+                                    height: 30%;
+                                    width: 180px;
+                                    .fullBar {
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 20px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        .barContainer {
+                                            height: 50%;
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            .bar {
+                                                height: 100%;
+                                                width: 10%;
+                                                background-color: grey;
+                                            }
+                                        }
+                                        .barText {
+                                            font-size: 0.6rem;
+                                            text-align: center;
+                                            height: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                                
+                            
+                        }
+                    }
+                    
+                    .projectsContainer{
+                        
                         height: 50%;
                         display: flex;
                         justify-content:center;
                         .projects {
-                            transform: scale(2.0);
+                            margin: auto;
+                            transform: scale(2);
                             accent-color: white;
                             position: relative;
                             
@@ -169,8 +254,10 @@ body{
                             
                             display: flex;
                             flex-direction: column;
+
+                            
                             .timeline{
-                                border-radius:5px;
+                                border-radius:0 0 5px  5px;
                                 color: white;
                                 margin:auto;
                                 height:90%;
@@ -179,6 +266,7 @@ body{
                                 flex-direction: column;
                                 position: relative;
                                 overflow: hidden;
+                                background-color: $black;
                                 .timelineContent {
                                     height:100%;
                                     display: flex;
@@ -211,6 +299,16 @@ body{
                                                 display: flex;
                                                 width: 110px;
                                                 flex-direction: column;
+                                                transition: all 0.2s;
+                                                &:hover {
+                                                    transform: scale(1.05);
+                                                }
+                                                &.hasSkills{
+                                                    background-color: lighten($red-ryb, 10%)
+                                                }
+                                                &.active{
+                                                    transform: scale(1.05);
+                                                }
                                                 
                                                 .projectHeader{
                                                     margin-top: 5px;
