@@ -14,10 +14,34 @@ body{
     width: 100vw;
     height: 100vh;
     .title{
+        display: flex;
+        
         z-index: 99;
+        .titleName{
+            width:33%;
+            text-align: center;
+            font-size:1.5em;
+        }
         .titleText{
+            width: 33%;
             font-size: 1.5em;
             text-align: center;
+        }
+        .titleLinks{
+            display: flex;
+            justify-content:center;
+            width: 33%;
+            .titleLinksContent{
+                a{
+                    color:white;
+                }
+                font-size: 1.5em;
+                width: 20%;
+                text-decoration: none;
+                display: flex;
+                justify-content:space-between;
+            }
+            
         }
         height: 10%;
         width: 100%;
