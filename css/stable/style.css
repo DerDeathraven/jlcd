@@ -431,15 +431,15 @@ body {
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project.hasSkills {
   background-color: #ff5051;
 }
 
-.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project.active {
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project.hasSkills.active {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }

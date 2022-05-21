@@ -301,14 +301,15 @@ body{
                                                 flex-direction: column;
                                                 transition: all 0.2s;
                                                 &:hover {
-                                                    transform: scale(1.05);
+                                                    transform: scale(1.02);
                                                 }
                                                 &.hasSkills{
-                                                    background-color: lighten($red-ryb, 10%)
+                                                    background-color: lighten($red-ryb, 10%);
+                                                    &.active{
+                                                        transform: scale(1.05);
+                                                    }
                                                 }
-                                                &.active{
-                                                    transform: scale(1.05);
-                                                }
+                                                
                                                 
                                                 .projectHeader{
                                                     margin-top: 5px;

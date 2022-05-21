@@ -57,9 +57,11 @@ var projects = {
              githubSymbole: '<i class="fa-brands fa-fort-awesome-alt"></i>',
              content: "I grew up with macs so my understanding of them was pretty good. I noticed that the Sys-Admin struggled with managing them. There i saw the chance help out. So i did",
              picture: "/images/Gut_Rohlstorf_Herrenhaus.jpg",
-             releatedSkills:[
-                 "JavaScript"
-             ]
+            releatedSkills:[
+                "Bash/Batch",
+                "Unix"
+            ]
+            
             },
             
                
@@ -78,8 +80,12 @@ var projects = {
                 name: "First batch chat",
                 github: "https://github.com/DerDeathraven/Batchchat",
                 content: "My buddy and i designed a chat program wich had Batch as backend",
-                picture: "/images/old_batchchat.png"
+                picture: "/images/old_batchchat.png",
+                releatedSkills:[
+                    "Bash/Batch",
+                ]
                 },
+               
          ]
      },
      2018:{
@@ -88,7 +94,12 @@ var projects = {
               name: "Final batch chat",
               github: "https://github.com/DerDeathraven/Batchchat",
               content: "I wanted to test my new gained skills. So i updated the old chat with an updated UI",
-              picture: "/images/Batchchat.png"
+              picture: "/images/Batchchat.png",
+              releatedSkills:[
+                "Bash/Batch",
+                "JavaScript",
+                "<HTML/CSS>",
+            ]
              },
              {
                 name: "Family business",
@@ -118,24 +129,45 @@ var projects = {
                 githubSymbole:'<i class="fa-solid fa-link"></i>',
                 picture: "/images/csm_Eingang-UNI-Studenten_CORP_Rene-Kube_IMG_6016_neu_97e9451734.jpg"
             },
-            {
-                name: "StreamPipe",
-                github: "https://www.hako.com/en/",
-                content: "Developing a full-fledged ROS-Bag analytic-suite. Marking Timestamps,Adding comments and exporting them as PDF. Built with Nodejs and Socket.io. Sadly not open source",
-                githubSymbole:'<i class="fa-solid fa-link"></i>',
-                picture: "/images/csm_Eingang-UNI-Studenten_CORP_Rene-Kube_IMG_6016_neu_97e9451734.jpg"
-            },
+            
             
                 
          ]
      },
      2022:{
         "projects":[
+            {
+                name: "Hako",
+                github: "https://www.hako.com/en/",
+                content: "Working on robotic Sweepingmaschines. Working right along senior-devs and being integrated in to the team",
+                githubSymbole:'<i class="fa-solid fa-link"></i>',
+                picture: "/images/Termine_Header.jpg",
+            },
+            {
+                name: "StreamPipe",
+                github: "https://www.hako.com/en/",
+                content: "Developing a full-fledged ROS-Bag analytic-suite. Marking Timestamps,Adding comments and exporting them as PDF. Built with Nodejs and Socket.io. Sadly not open source",
+                githubSymbole:'<i class="fa-solid fa-link"></i>',
+                picture: "/images/csm_Eingang-UNI-Studenten_CORP_Rene-Kube_IMG_6016_neu_97e9451734.jpg",
+                releatedSkills:[
+                    "NodeJS",
+                    "JavaScript",
+                    "<HTML/CSS>",
+                    "Socket.io",
+                    "JQuery"
+                ]
+            },
              {
-              name: "This Website",
+              name: "Experimental Portfolio",
               github: "https://github.com/DerDeathraven/jlcd",
               content: "Using Three.js and CSS3D. This developed out of a weekend of learning 3D modeling inside of a browser.",
-              picture: "/images/Bewerbungsfoto.jpg"
+              picture: "/images/Bewerbungsfoto.jpg",
+              releatedSkills:[
+                  "JavaScript",
+                  "<HTML/CSS>",
+                  "JQuery",
+                  "Three.js"
+              ]
              },
             
                 
