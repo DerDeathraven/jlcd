@@ -164,18 +164,32 @@ body{
                             padding-top: 2%;
                             padding-bottom: 10px;
                             position: relative;
-                           width: 50%;
+                            width: 50%;
+                            @media only screen and (max-width: 750px){
+                                width: 98%;
+                                padding-bottom: 10px;
+                                gap: 0.5%;
+                                overflow: scroll;
+                                
+                            }
+                           
                             display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
                             justify-content: center;
                             gap: 2%;
-
+                           
                             .skillContainer {
+                                @media only screen and (max-width: 750px){
+                                    margin-bottom:30px;
+                                    
+                                }
                                 color:white;
                                 width: 200px;
+                                
                                 height: 30px;
                                 margin-bottom: 15px;
+                                
                                 .skillHeader {
                                     height: 40%;
                                     font-size: 0.9rem;
@@ -203,6 +217,7 @@ body{
                                     }
                                 }
                                 .yearContainer {
+                                    
                                     position: relative;
                                     display: flex;
                                     font-size: 0.7rem;
@@ -250,6 +265,9 @@ body{
                             position: relative;
                             
                             width: 50%;
+                            @media only screen and (max-width: 750px){
+                                width: 98%;
+                            }
                             height: 50%;
                             
                             display: flex;

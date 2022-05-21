@@ -238,11 +238,26 @@ body {
   gap: 2%;
 }
 
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList {
+    width: 98%;
+    padding-bottom: 10px;
+    gap: 0.5%;
+    overflow: scroll;
+  }
+}
+
 .container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer {
   color: white;
   width: 200px;
   height: 30px;
   margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer {
+    margin-bottom: 30px;
+  }
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillHeader {
@@ -348,6 +363,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects {
+    width: 98%;
+  }
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline {

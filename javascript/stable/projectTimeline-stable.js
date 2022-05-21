@@ -29,12 +29,11 @@ class Timeline{
         this.drawTimeline()
         var me = this
         $(".project").on("click",(e)=>{
-            console.log("test")
             if($(e.currentTarget).hasClass("active")){
-                $(e.currentTarget).removeClass("active")
+                $(".project").removeClass("active")
                 me.skills.renderSkills()
             }else{
-                console.log("war hier")
+                $(".project").removeClass("active")
                 $(e.currentTarget).addClass("active")
                 var name = $(e.currentTarget).find(".projectTitle").text()
                 var skills = []
