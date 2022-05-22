@@ -15,6 +15,7 @@ body {
 }
 
 .container .section.landing .landingContainer {
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,15 +55,15 @@ body {
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .jean {
-  width: 50px;
+  width: 40px;
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .luc {
-  width: 30px;
+  width: 25px;
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .chrisoph {
-  width: 100px;
+  width: 80px;
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .dittler {
@@ -81,7 +82,6 @@ body {
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName {
   width: 60%;
-  font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,6 +92,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  min-width: 250px;
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName span.hidding {
@@ -100,6 +101,11 @@ body {
   width: 0px;
   -webkit-transition: width .5s;
   transition: width .5s;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName span {
+  font-size: clamp(0.1rem, 1.2rem, 3.5rem);
+  overflow: hidden;
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent {
@@ -115,6 +121,8 @@ body {
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardLeft {
   width: 50%;
+  font-size: clamp(0.3rem, 0.7rem, 3.5rem);
+  overflow: hidden;
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardRight {
@@ -181,6 +189,42 @@ body {
   aspect-ratio: 16/9;
 }
 
+@media only screen and (max-width: 1000px) {
+  .container .section.landing .landingContainer .profile {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container .section.landing .landingContainer .profile img {
+    position: absolute;
+    left: -850px;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+  .container .section.landing .landingContainer .landingCardContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard {
+    width: 98vw;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader {
+    height: 15%;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName {
+    width: 70%;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent {
+    height: 65%;
+    font-size: 0.7em;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardFooter {
+    height: 20%;
+  }
+}
+
 .container .section.skills {
   width: 100vw;
   height: 100vh;
@@ -196,6 +240,18 @@ body {
 
 .container .section.skills .skillsHeader {
   height: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsHeader .skillsHeaderText {
+  font-size: 3em;
+  text-align: center;
+  color: white;
 }
 
 .container .section.skills .skillsContainer {
@@ -241,7 +297,6 @@ body {
 @media only screen and (max-width: 750px) {
   .container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList {
     width: 98%;
-    padding-bottom: 10px;
     gap: 0.5%;
     overflow: scroll;
   }
@@ -369,6 +424,9 @@ body {
   .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects {
     width: 98%;
   }
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar {
+    display: none;
+  }
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline {
@@ -387,6 +445,13 @@ body {
   position: relative;
   overflow: hidden;
   background-color: #101010;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline {
+    overflow-x: scroll;
+    height: 100%;
+  }
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent {
