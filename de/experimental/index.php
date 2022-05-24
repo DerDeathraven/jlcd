@@ -33,13 +33,13 @@
     crossorigin="anonymous" defer></script>
 
 
-    <script src="/javascript/generateSkillsTimeline.js" defer></script>
-    <script src="/javascript/stateMachine.js" defer></script>
-    <script src="/javascript/sidecard.js" defer></script>
-    <script src="/javascript/projectTimeline.js" defer></script>
-    <script src="/javascript/Main.js" defer></script>
+    <script src="/javascript/experimental/generateSkillsTimeline.js" defer></script>
+    <script src="/javascript/experimental/stateMachine.js" defer></script>
+    <script src="/javascript/experimental/sidecard.js" defer></script>
+    <script src="/javascript/experimental/projectTimeline.js" defer></script>
+    <script src="/javascript/experimental/Main.js" defer></script>
 
-    <script src="/javascript/jqueryTrigger.js" defer></script>
+    <script src="/javascript/experimental/jqueryTrigger.js" defer></script>
 
 
 

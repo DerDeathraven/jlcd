@@ -15,7 +15,6 @@ class SkillList{
     }
     renderSkills(selection=[]){
         this.dom.html("")
-        console.log(selection)
         if(!(selection.length>0)){
             this.skills.forEach(s=>{
                 this.dom.append(s.domElement)
@@ -59,8 +58,6 @@ class Skill {
         if(this.startYear> START_OF_PROGRAMMING ){
             $(yearContainer).append(startReadout)
         }
-        console.log(time.getFullYear()),
-        console.log(this.endYear)
         if(time.getFullYear()-1>this.endYear  ){
             
             $(yearContainer).append(endReadout)

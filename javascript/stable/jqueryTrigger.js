@@ -13,6 +13,5 @@ $(".projectScrollbar").on("input",e=>{
   
   var width = parseInt($(".timelineContent").width()) 
   var realLength = width-$(".timeline").width()
-  console.log($(".timelineContent").width())
   $(".timelineContent").css("left",`${-(value*realLength)}px`)
 })
