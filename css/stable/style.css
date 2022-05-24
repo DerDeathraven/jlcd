@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 .container {
@@ -403,6 +404,12 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer {
+    height: 60%;
+  }
+}
+
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects {
   margin: auto;
   -webkit-transform: scale(2);
@@ -572,8 +579,20 @@ body {
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
   text-align: center;
-  font-size: 0.3em;
   height: 60%;
+}
+
+@supports (font-size: 0.3em) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
+    font-size: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
+    -webkit-text-size-adjust: 100%;
+    font-size: 6.4px;
+  }
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectGithub {

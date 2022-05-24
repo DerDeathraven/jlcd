@@ -6,6 +6,7 @@ $uranian-blue: #b1ddf1;
 body{
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 .container{
     font-family: "Roboto Slab", serif;
@@ -313,6 +314,9 @@ body{
                     .projectsContainer{
                         
                         height: 50%;
+                        @media only screen and (max-width: 750px){
+                            height: 60%;
+                        }
                         display: flex;
                         justify-content:center;
                         .projects {
@@ -426,8 +430,20 @@ body{
                                                     }
                                                     .projectContentText{
                                                         text-align: center;
-                                                        font-size: 0.3em;
+
+                                                        @supports (font-size:0.3em){
+                                                            font-size: 0.3em;
+                                                            
+                                                        }
+                                                        
+                                                        
+                                                        
                                                         height:60%;
+                                                        @media only screen and (max-width: 750px){
+                                                            -webkit-text-size-adjust: 100%;
+                                                            font-size: 16px * 0.4;
+                                                        }
+
                                                     }
                                                     .projectGithub{
                                                         a{
