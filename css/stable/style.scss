@@ -411,7 +411,7 @@ body{
             
                                                     .projectPicture{
                                                         object-fit: cover;
-                                                        height: 100%;
+                                                       
                                                         aspect-ratio: 16/9;
                                                        
                                                         
@@ -487,6 +487,45 @@ body{
                     
                 }
                 
+            }
+        }
+        &.footer{
+            background-color:$black;
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+            .innerFooter{
+                margin: 10px;
+                width:100%;
+                display: flex;
+                justify-content: center;
+                .contactMe{
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    span{
+                        height:40%;
+                    }
+                    .links{
+                        a{
+                            color: white;
+                            font-size:2rem;
+                        }
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        @media screen and (max-width:750px) {
+                            flex-direction: column;
+                            
+                        }
+
+                    }
+                    
+                }
             }
         }
     }

@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#ff1d1e">
    
     <meta name="google-site-verification" content="tJ7SFjSnFbb1QuoYVX2i8HqKlyZH8MMZUzUlihUCB6o" />
-    <meta name="description" content="Jean-Luc Christoph Dittler, Fullstack JS developer based in the north of germany.">
+    <meta name="description" content="Fullstack JS developer based in the north of germany.">
     <meta name=”robots” content=”index,follow”>
     <meta name="revisit-after" content="7 days">
     <meta name="distribution" content="web">
@@ -32,7 +32,7 @@
     <meta name="og:url" content="http://jlcd.de/"/>
     <meta name="og:image" content="http://jlcd.de/images/Profbild1.jpg"/>
     <meta name="og:site_name" content="JLCD"/>
-    <meta name="og:description" content="Jean-Luc Christoph Dittler, Fullstack JS developer based in the north of germany"/>
+    <meta name="og:description" content="Fullstack JS developer based in the north of germany"/>
     <meta name="og:email" content="jean-luc@jlcd.de"/>
 
     <!-- Apple -->
@@ -49,7 +49,7 @@
     <meta property="twitter:domain" content="jlcd.de">
     <meta property="twitter:url" content="https://jlcd.de/">
     <meta name="twitter:title" content="Jean-Luc Christoph Dittler - Official Portfolio">
-    <meta name="twitter:description" content="Jean-Luc Christoph Dittler, Fullstack JS developer based in the north of germany">
+    <meta name="twitter:description" content="Fullstack JS developer based in the north of germany">
     <meta name="twitter:image" content="http://jlcd.de/images/Profbild1.jpg">
         
 
