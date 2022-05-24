@@ -1,0 +1,630 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  font-family: "Roboto Slab", serif;
+  overflow: hidden;
+}
+
+.container .section.landing {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ff1d1e;
+}
+
+.container .section.landing .landingContainer {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.container .section.landing .landingContainer .landingCardContainer {
+  position: relative;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard {
+  overflow: hidden;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  width: 60%;
+  aspect-ratio: 16/9;
+  background-color: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .jean {
+  width: 40px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .luc {
+  width: 25px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .chrisoph {
+  width: 80px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard:hover .landingCardHeader .landingCardName .dittler {
+  width: 60px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10%;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  min-width: 250px;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName span.hidding {
+  display: inline-block;
+  overflow: hidden;
+  width: 0px;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName span {
+  font-size: clamp(0.1rem, 1.2rem, 3.5rem);
+  overflow: hidden;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent {
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardLeft {
+  width: 50%;
+  font-size: clamp(0.3rem, 0.7rem, 3.5rem);
+  overflow: hidden;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardRight {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardRight .landingText {
+  width: 50vw;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardRight .landingCardRightText {
+  text-align: center;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardFooter {
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardFooter:hover {
+  cursor: pointer;
+  border-radius: 0 0 5px  5px;
+  background-color: #b1ddf155;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardFooter .landingCardFooterContent {
+  text-align: center;
+}
+
+.container .section.landing .landingContainer .profile {
+  position: relative;
+  width: 50vw;
+  overflow: hidden;
+}
+
+.container .section.landing .landingContainer .profile img {
+  position: absolute;
+  left: -500px;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .section.landing .landingContainer .profile {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container .section.landing .landingContainer .profile img {
+    position: absolute;
+    left: -850px;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+  .container .section.landing .landingContainer .landingCardContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard {
+    width: 98vw;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader {
+    height: 15%;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardHeader .landingCardName {
+    width: 70%;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent {
+    height: 65%;
+    font-size: 0.7em;
+  }
+  .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardFooter {
+    height: 20%;
+  }
+}
+
+.container .section.skills {
+  width: 100vw;
+  height: 100vh;
+  background-color: #434343;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.skills .skillsHeader {
+  height: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsHeader .skillsHeaderText {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+}
+
+.container .section.skills .skillsContainer {
+  height: 90%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent {
+  height: 100%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList {
+  border-radius: 5px 5px 0 0;
+  background-color: #101010;
+  padding-top: 2%;
+  padding-bottom: 10px;
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2%;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList {
+    width: 98%;
+    gap: 0.5%;
+    overflow: scroll;
+  }
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer {
+  color: white;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer {
+    margin-bottom: 30px;
+  }
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillHeader {
+  height: 40%;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent {
+  margin: 0;
+  height: 60%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent div {
+  margin: auto;
+  height: 30%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent .leftBar {
+  background-color: grey;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent .middleBar {
+  background-color: #ff1d1e;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .skillContent .rightBar {
+  background-color: grey;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.7rem;
+  height: 30%;
+  width: 180px;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer .fullBar {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer .fullBar .barContainer {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer .fullBar .barContainer .bar {
+  height: 100%;
+  width: 10%;
+  background-color: grey;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .skillsListContainer .skillsList .skillContainer .yearContainer .fullBar .barText {
+  font-size: 0.6rem;
+  text-align: center;
+  height: 50%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer {
+    height: 60%;
+  }
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects {
+  margin: auto;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  accent-color: white;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects {
+    width: 98%;
+  }
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar {
+    display: none;
+  }
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline {
+  border-radius: 0 0 5px  5px;
+  color: white;
+  margin: auto;
+  height: 90%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: #101010;
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline {
+    overflow-x: scroll;
+    height: 100%;
+  }
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 4px;
+  position: absolute;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear {
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .yearText {
+  text-align: center;
+  height: 15%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project {
+  padding: 2px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #181818;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project.hasSkills {
+  background-color: #ff5051;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project.hasSkills.active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectHeader {
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectHeader .projectPicture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent {
+  height: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectTitle {
+  text-align: center;
+  font-size: 0.6em;
+  height: 20%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
+  text-align: center;
+  height: 60%;
+}
+
+@supports (font-size: 0.3em) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
+    font-size: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
+    -webkit-text-size-adjust: 100%;
+    font-size: 6.4px;
+  }
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectGithub {
+  text-align: center;
+  height: 20%;
+  margin-bottom: 5px;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectGithub a {
+  color: white;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar {
+  margin: auto;
+  width: 50%;
+  height: 10%;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar::-webkit-slider-runnable-track {
+  border-radius: 10px;
+  background-color: #ff1d1e;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  color: white;
+}
+
+.container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .projectScrollbar::-moz-range-thumb {
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

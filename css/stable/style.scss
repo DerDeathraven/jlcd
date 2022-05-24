@@ -1,0 +1,493 @@
+$black: #101010;
+$red-ryb: #ff1d1e;
+$international-klein-blue: #2a29b9;
+$mountbatten-pink: #977390;
+$uranian-blue: #b1ddf1;
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.container{
+    font-family: "Roboto Slab", serif;
+    overflow: hidden;
+    .section{
+        &.landing{
+
+            width: 100vw;
+            height: 100vh;
+            background-color: $red-ryb;
+            
+            .landingContainer{
+                z-index: 0;
+                display:flex;
+                height: 100vh;
+                
+                .landingCardContainer{
+                    position: relative;
+                    width:50vw;
+                    
+                    display:flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    
+                    .landingCard{
+                        overflow: hidden;
+                        border-radius: 5px;
+                        color:white;
+                        margin: auto;
+                        width:60%;
+                        aspect-ratio: 16/9;
+                        background-color: $black;
+                        display: flex;
+                        flex-direction: column;
+                        &:hover{
+                            .landingCardHeader{
+                                .landingCardName{
+                                .jean{
+                                    width:40px;
+                                }
+                                .luc{
+                                    width:25px;
+                                }
+                                .chrisoph{
+                                    width:80px;
+                                    
+                                }
+                                .dittler{
+                                    width:60px;
+                                }
+                            }
+                        }
+                        }
+                        .landingCardHeader{
+                            display:flex;
+                            justify-content:center;
+                            
+                            height:10%;
+                            .landingCardName{
+                                width:60%;
+                                
+                                display: flex;
+                                justify-content:center;
+                                user-select: none;     
+                                min-width: 250px;     
+                                span.hidding {
+                                    display: inline-block;
+                                    overflow: hidden;
+                                    width: 0px;
+                                    transition: width .5s;
+                                }
+                                span{
+                                    font-size: clamp(0.1rem, 1.2rem, 3.5rem);
+                                    overflow: hidden;
+                                }
+                                
+                            }
+                        }
+                        .landingCardContent{
+                            height: 75%;
+                            display:flex;
+                            flex-direction:row;
+                            
+                            .landingCardLeft{
+                                width:50%;
+                                font-size: clamp(0.3rem, 0.7rem, 3.5rem) ;
+                                overflow:hidden;
+                            }
+                            .landingCardRight{
+                                width:50%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                               
+                                .landingText{
+                                    width:50vw;
+                                    
+                                }
+                                .landingCardRightText{
+                                    
+                                    text-align: center;
+                                    
+                                }
+                            }
+                        }
+                        .landingCardFooter{
+                            height:15%;
+                            display: flex;
+                            width:100%;
+                            flex-direction:row;
+                            justify-content:center;
+                            transition: all 0.2s;
+                           
+                            
+                            &:hover{
+                                cursor:pointer;
+                                border-radius:  0 0 5px  5px ;
+                                background-color:#b1ddf155;
+                                transform: scale(1.15);
+                            }
+                            .landingCardFooterContent{
+                                text-align:center;
+                            }
+                        }
+                    }
+                }
+                
+                .profile{
+                    position: relative;
+                    width: 50vw;
+                    overflow: hidden;
+                    img{
+                        position: absolute;
+                        left: -500px;
+                        height:100%;
+                        aspect-ratio: 16/9;
+                    }
+                }
+                @media only screen and (max-width: 1000px){
+                    
+                    .profile{
+                        position: absolute;
+                        width: 100vw;
+                        height: 100vh;
+
+                        img{
+                            position: absolute;
+                            left: -850px;
+                            filter: blur(10px);
+                           
+                        }
+                    }
+                    .landingCardContainer{
+                        position: absolute;
+                        width: 100vw;
+                        height: 100vh;
+                        z-index: 999;
+                        .landingCard{
+                            width: 98vw;
+                            .landingCardHeader{
+                                height: 15%;
+                                .landingCardName{
+                                    width: 70%;
+                                    
+                                    
+                                }
+                            }
+                            
+                            .landingCardContent{
+                                height:65%;
+                                font-size: 0.7em;
+                            }
+                            .landingCardFooter{
+                                height:20%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        &.skills{
+            width: 100vw;
+            height: 100vh;
+            background-color:lighten($black, 20%);
+            display: flex;
+            flex-direction: column;
+            
+            .skillsHeader{
+                height: 7%;
+                display: flex;
+                justify-content: center;
+                .skillsHeaderText{
+                    font-size: 3em;
+                    text-align: center;
+                    color : white;
+                }
+            }
+            .skillsContainer{
+                height: 90%;
+             
+                
+                .skillsContainerContent{
+                    height: 100%;
+                    .skillsListContainer{
+                        height: 40%;
+                        display: flex;
+                        justify-content:center;
+                        .skillsList {
+                            border-radius: 5px 5px 0 0;
+                            background-color: $black;
+                            padding-top: 2%;
+                            padding-bottom: 10px;
+                            position: relative;
+                            width: 50%;
+                            @media only screen and (max-width: 750px){
+                                width: 98%;
+                               
+                                gap: 0.5%;
+                                overflow: scroll;
+                                
+                            }
+                           
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            gap: 2%;
+                           
+                            .skillContainer {
+                                @media only screen and (max-width: 750px){
+                                    margin-bottom:30px;
+                                    
+                                }
+                                color:white;
+                                width: 200px;
+                                
+                                height: 30px;
+                                margin-bottom: 15px;
+                                
+                                .skillHeader {
+                                    height: 40%;
+                                    font-size: 0.9rem;
+                                    text-align: left;
+                                    
+                                }
+                                .skillContent {
+                                    margin: 0;
+                                    height: 60%;
+                                    width: 90%;
+    
+                                    display: flex;
+                                    
+                                    div {
+                                        margin: auto;
+                                        height: 30%;
+                                    }
+                                    .leftBar {
+                                        background-color: grey;
+                                    }
+                                    .middleBar {
+                                        background-color: $red-ryb;
+                                    }
+                                    .rightBar {
+                                        background-color: grey;
+                                    }
+                                }
+                                .yearContainer {
+                                    
+                                    position: relative;
+                                    display: flex;
+                                    font-size: 0.7rem;
+                                    height: 30%;
+                                    width: 180px;
+                                    .fullBar {
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 20px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        .barContainer {
+                                            height: 50%;
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            .bar {
+                                                height: 100%;
+                                                width: 10%;
+                                                background-color: grey;
+                                            }
+                                        }
+                                        .barText {
+                                            font-size: 0.6rem;
+                                            text-align: center;
+                                            height: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                                
+                            
+                        }
+                    }
+                    
+                    .projectsContainer{
+                        
+                        height: 50%;
+                        @media only screen and (max-width: 750px){
+                            height: 60%;
+                        }
+                        display: flex;
+                        justify-content:center;
+                        .projects {
+                            margin: auto;
+                            transform: scale(2);
+                            accent-color: white;
+                            position: relative;
+                            
+                            width: 50%;
+                            @media only screen and (max-width: 750px){
+                                width: 98%;
+                                .projectScrollbar{
+                                    display: none;
+                                }
+                                
+                            }
+                            height: 50%;
+                            
+                            display: flex;
+                            flex-direction: column;
+
+                            
+                            .timeline{
+                                border-radius:0 0 5px  5px;
+                                color: white;
+                                margin:auto;
+                                height:90%;
+                                width:50%;
+                                display: flex;
+                                flex-direction: column;
+                                position: relative;
+                                overflow:hidden;
+                                
+                                @media only screen and (max-width: 750px){
+                                    overflow-x:scroll;
+                                    height:100%;
+                                }
+                                background-color: $black;
+                                .timelineContent {
+                                    height:100%;
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 4px;
+                                    position:absolute;
+                                    .projectYear{
+                                        background-color: lighten($black, 10%);                            
+                                        width: 100%;
+                                        height:100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        .yearText{
+                                            text-align: center;
+                                            height:15%;
+                                        }
+                                        .projectContainer{
+                                            width: 100%;
+                                            height:85%;
+
+                                            position: relative;
+                                            display: flex;
+                                            flex-direction: row;
+                                            .project{
+                                                padding:2px;
+                                                border-radius: 5px;
+                                                margin: 5px;
+                                                background-color: lighten($black, 3%);
+                                                position: relative;
+                                                display: flex;
+                                                width: 110px;
+                                                flex-direction: column;
+                                                transition: all 0.2s;
+                                                &:hover {
+                                                    transform: scale(1.02);
+                                                }
+                                                &.hasSkills{
+                                                    background-color: lighten($red-ryb, 10%);
+                                                    &.active{
+                                                        transform: scale(1.05);
+                                                    }
+                                                }
+                                                
+                                                
+                                                .projectHeader{
+                                                    margin-top: 5px;
+                                                    
+                                                    position: relative;
+                                                    width: 100%;
+                                                    height: 40%;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    
+            
+                                                    .projectPicture{
+                                                        object-fit: cover;
+                                                        height: 100%;
+                                                        aspect-ratio: 16/9;
+                                                       
+                                                        
+                                                        
+                                                    }
+                                                }
+                                                .projectContent{
+                                                    height:55%;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: space-evenly;
+                                                    .projectTitle{
+                                                        text-align: center;
+                                                        font-size: 0.6em;
+                                                        height:20%;
+                                                    }
+                                                    .projectContentText{
+                                                        text-align: center;
+
+                                                        @supports (font-size:0.3em){
+                                                            font-size: 0.3em;
+                                                            
+                                                        }
+                                                        
+                                                        
+                                                        
+                                                        height:60%;
+                                                        @media only screen and (max-width: 750px){
+                                                            -webkit-text-size-adjust: 100%;
+                                                            font-size: 16px * 0.4;
+                                                        }
+
+                                                    }
+                                                    .projectGithub{
+                                                        a{
+                                                            color:white;
+                                                        }
+                                                        text-align: center;
+                                                        height:20%;
+                                                        margin-bottom:5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .projectScrollbar {
+                                margin:auto;
+                                width: 50%;
+                                height:10%;
+                                &::-webkit-slider-runnable-track {
+                                    border-radius:10px;
+                                    background-color: $red-ryb;
+                                   
+                                  }
+                                &::-webkit-slider-thumb {
+   
+                                    -webkit-appearance: none;
+                                    cursor: ew-resize;
+                                    color: white;
+                                  }
+                                &::-moz-range-thumb{
+                                    
+                                    -webkit-appearance: none;
+                                    cursor: ew-resize;
+                                    color: white;
+                                }
+                               
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}

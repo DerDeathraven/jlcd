@@ -1,0 +1,188 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overflow: hidden;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 99;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+}
+
+.container .title .titleName {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+  width: 33%;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .title .titleName span.hidding {
+  display: inline-block;
+  overflow: hidden;
+  width: 0px;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.container .title .titleName:hover .jean {
+  width: 50px;
+}
+
+.container .title .titleName:hover .luc {
+  width: 30px;
+}
+
+.container .title .titleName:hover .chrisoph {
+  width: 100px;
+}
+
+.container .title .titleName:hover .dittler {
+  width: 60px;
+}
+
+.container .title .titleText {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+  width: 33%;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.container .title .titleLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 33%;
+}
+
+.container .title .titleLinks .titleLinksContent {
+  font-size: 1.5em;
+  width: 20%;
+  text-decoration: none;
+  pointer-events: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .title .titleLinks .titleLinksContent a {
+  color: white;
+}
+
+.container .choseContent {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.container .choseContent .sides {
+  margin: 0;
+  position: relative;
+  -webkit-filter: blur(0.5);
+          filter: blur(0.5);
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container .choseContent .sides:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.container .choseContent .sides.left {
+  background-color: #ff1d1e;
+}
+
+.container .choseContent .sides.right {
+  background-color: #434343;
+}
+
+.container .choseContent .sides .header .headerText {
+  font-size: 2em;
+  text-align: center;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+
+.container .choseContent .sides .content {
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+
+.container .choseContent .sides:hover .content {
+  height: 10%;
+}
+/*# sourceMappingURL=style.css.map */
