@@ -529,6 +529,7 @@ body {
 }
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project.hasSkills {
+  cursor: pointer;
   background-color: #ff5051;
 }
 
@@ -553,6 +554,7 @@ body {
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectHeader .projectPicture {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
   aspect-ratio: 16/9;
 }
 
@@ -578,6 +580,10 @@ body {
 
 .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
   text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   height: 60%;
 }
 

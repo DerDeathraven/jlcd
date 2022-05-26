@@ -392,6 +392,7 @@ body{
                                                     transform: scale(1.02);
                                                 }
                                                 &.hasSkills{
+                                                    cursor: pointer;
                                                     background-color: lighten($red-ryb, 10%);
                                                     &.active{
                                                         transform: scale(1.05);
@@ -411,7 +412,7 @@ body{
             
                                                     .projectPicture{
                                                         object-fit: cover;
-                                                       
+                                                        width: 100%;
                                                         aspect-ratio: 16/9;
                                                        
                                                         
@@ -430,6 +431,7 @@ body{
                                                     }
                                                     .projectContentText{
                                                         text-align: center;
+                                                        user-select: none;
 
                                                         @supports (font-size:0.3em){
                                                             font-size: 0.3em;
