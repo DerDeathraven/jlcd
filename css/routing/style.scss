@@ -5,8 +5,9 @@ $mountbatten-pink: #977390;
 $uranian-blue: #b1ddf1;
 body{
    
-   padding: 0;
+    padding: 0;
     margin: 0;
+    font-size: 16px;
     
 }
 .container{
@@ -54,11 +55,14 @@ body{
         }
         .titleText{
             -webkit-user-select: none;  /* Chrome all / Safari all */
-        -moz-user-select: none;     /* Firefox all */
-        -ms-user-select: none;      /* IE 10+ */
-        user-select: none;          /* Likely future */  
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */  
             width: 33%;
             font-size: 1.5em;
+            @media screen and (max-width: 750px) {
+              font-size: 1.2em;
+            }
             text-align: center;
         }
         .titleLinks{
@@ -67,11 +71,19 @@ body{
             width: 33%;
             
             .titleLinksContent{
+                @media screen and (max-width: 750px) {
+                    width:50%;
+                  }
+               
+                width: 33%;
+                 
                 a{
                     color:white;
+                    
                 }
                 font-size: 1.5em;
-                width: 20%;
+                
+                
                 text-decoration: none;
                 pointer-events: auto;
                 display: flex;
@@ -81,12 +93,16 @@ body{
         }
         height: 10%;
         width: 100%;
-        position: absolute
+        position: absolute;
     }
     .choseContent{
         height:100%;
         display:flex;
+
         flex-direction:row;
+        @media screen and (max-width: 750px) {
+            flex-direction: column;
+        }
         cursor:pointer;
         .sides{
             
@@ -98,6 +114,10 @@ body{
             filter:blur(0.5);
             width:50%;
             height: 100%;
+            @media screen and (max-width: 750px) {
+                width:100%;
+                height: 50%;
+            }
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -122,6 +142,10 @@ body{
                 text-align:center;
                 overflow: hidden;
                 height: 0;
+                @media screen and (max-width: 750px) {
+                    font-size: 0.8em;
+                    height: 20%;
+                }
                 transition:all 0.2s;
                 -webkit-user-select: none;  /* Chrome all / Safari all */
                 -moz-user-select: none;     /* Firefox all */
