@@ -55,7 +55,7 @@ var projects = {
              name: '"Junior" Sys-Admin',
              github: "https://wp.schloss-rohlstorf.de/",
              githubSymbole: '<i class="fa-brands fa-fort-awesome-alt"></i>',
-             content: "I grew up with macs so my understanding of them was pretty good. I noticed that the Sys-Admin struggled with managing them. There i saw the chance help out. So i did",
+             content: "Growing up with a web-developer mom lead to me being fluid with OSX at the age of 13. This i used to administrate the macbooks used by my school.",
              picture: "/images/Gut_Rohlstorf_Herrenhaus.jpg",
             releatedSkills:[
                 "Bash/Batch",
@@ -70,16 +70,16 @@ var projects = {
     2016:{
         "projects":[
              {
-              name: " honorary award",
-              github: "google.de",
-              content: "For my duties as a Sys-Admin",
+              name: " Honorary Award",
+              github: "https://wp.schloss-rohlstorf.de/",
+              content: "In recognition of my duties as a system administrator for all the OSX devices in our school. As well as being a role-model for other students",
               githubSymbole:" ",
-              picture: "/images/object_bg.jpg"
+              picture: "/images/eherenmarke.jpeg"
              },
              {
                 name: "First batch chat",
                 github: "https://github.com/DerDeathraven/Batchchat",
-                content: "My buddy and i designed a chat program wich had Batch as backend",
+                content: "Developing a basic knowledge of programming in my early years and the need for a teacher free chat in school, ended in me and my friend building a chat with batch as a backend",
                 picture: "/images/old_batchchat.png",
                 releatedSkills:[
                     "Bash/Batch",
@@ -88,12 +88,24 @@ var projects = {
                
          ]
      },
+     2017:{
+        "projects":[
+             {
+              name: "MSA",
+              github: "https://www.basses-blatt.de/newsreader-aktuelles/esa-und-msa-in-rohlstorf.html",
+              content: "Graduating as best in class with a GPA of 1.6",
+              githubSymbole:'<i class="fa-solid fa-graduation-cap"></i>',
+              picture: "/images/msa.jpg"
+             },
+               
+         ]
+     },
      2018:{
         "projects":[
              {
               name: "Final batch chat",
               github: "https://github.com/DerDeathraven/Batchchat",
-              content: "I wanted to test my new gained skills. So i updated the old chat with an updated UI",
+              content: "Using my new developed skill in web-development, i wanted to redo my chat program. I used a HTML frontend to smooth up the user experience.",
               picture: "/images/Batchchat.png",
               releatedSkills:[
                 "Bash/Batch",
@@ -123,6 +135,13 @@ var projects = {
               picture: "/images/bbz.png"
              },
              {
+                name: " Abitur ",
+                github: "http://www.bbz-se.de/verabschiedung-der-abiturientinnen/",
+                content: "A technical school simlar to college. This school allowed to choose a main course out of various classes. This course was part of the Abitur exams. I chose environment development",
+                githubSymbole:'<i class="fa-solid fa-graduation-cap"></i>',
+                picture: "/images/BG-T18.jpg"
+            },
+             {
                 name: "IT-Security",
                 github: "https://www.uni-luebeck.de/universitaet/universitaet.html",
                 content: "Starting my studies and extending my knowledge of JS in the background",
@@ -139,37 +158,56 @@ var projects = {
             {
                 name: "Hako",
                 github: "https://www.hako.com/en/",
-                content: "Working on robotic Sweepingmaschines. Working right along senior-devs and being integrated in to the team",
+                content: "Working on robotic sweepingmaschines. Being treated as a full member and not a Intern right alongside senior-devs",
                 githubSymbole:'<i class="fa-solid fa-link"></i>',
                 picture: "/images/Termine_Header.jpg",
             },
             {
                 name: "StreamPipe",
                 github: "https://www.hako.com/en/",
-                content: "Developing a full-fledged ROS-Bag analytic-suite. Marking Timestamps,Adding comments and exporting them as PDF. Built with Nodejs and Socket.io. Sadly not open source",
-                githubSymbole:'<i class="fa-solid fa-link"></i>',
+                content: "Developing a full-fledged ROS-Bag analytic-suite. Marking Timestamps, Adding comments and exporting them as PDF. Built with Nodejs and Socket.io.",
+                githubSymbole:'<i class="fa-solid fa-lock"></i>',
                 picture: "/images/csm_Eingang-UNI-Studenten_CORP_Rene-Kube_IMG_6016_neu_97e9451734.jpg",
                 releatedSkills:[
                     "NodeJS",
                     "JavaScript",
                     "<HTML/CSS>",
                     "Socket.io",
-                    "JQuery"
+                    "JQuery",
+                    "ROS"
                 ]
             },
-             {
-              name: "Experimental Portfolio",
-              github: "https://github.com/DerDeathraven/jlcd",
-              content: "Using Three.js and CSS3D. This developed out of a weekend of learning 3D modeling inside of a browser.",
-              picture: "/images/Bewerbungsfoto.jpg",
-              releatedSkills:[
-                  "JavaScript",
-                  "<HTML/CSS>",
-                  "JQuery",
-                  "Three.js"
-              ]
-             },
+             
             
+                
+         ]
+     },
+     "Portfolio":{
+        "projects":[
+            {
+                name: "Stable Portfolio",
+                github: "https://github.com/DerDeathraven/jlcd",
+                content: "My spin on a modern website similar to what you can find on many websites",
+                picture: "/images/schonwieder_ich.JPG",
+                releatedSkills:[
+                    "JavaScript",
+                    "<HTML/CSS>",
+                    "JQuery"
+                ]
+               },
+               {
+                name: "Experimental Portfolio",
+                github: "https://github.com/DerDeathraven/jlcd",
+                content: "Using Three.js and CSS3D. This developed out of a weekend of learning 3D modeling inside of a browser.",
+                picture: "/images/Bewerbungsfoto.jpg",
+                releatedSkills:[
+                    "JavaScript",
+                    "<HTML/CSS>",
+                    "JQuery",
+                    "Three.js"
+                ]
+               },
+             
                 
          ]
      },

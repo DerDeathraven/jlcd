@@ -121,8 +121,18 @@ body {
 }
 
 .container .section.landing .landingContainer .landingCardContainer .landingCard .landingCardContent .landingCardLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
-  font-size: clamp(0.3rem, 0.7rem, 3.5rem);
+  font-size: 0.8rem;
   overflow: hidden;
 }
 
@@ -241,6 +251,8 @@ body {
 
 .container .section.skills .skillsHeader {
   height: 7%;
+  min-height: 3em;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,13 +596,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-size: 0.4em;
   height: 60%;
-}
-
-@supports (font-size: 0.3em) {
-  .container .section.skills .skillsContainer .skillsContainerContent .projectsContainer .projects .timeline .timelineContent .projectYear .projectContainer .project .projectContent .projectContentText {
-    font-size: 0.3em;
-  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -690,6 +697,15 @@ body {
 .container .section.footer .innerFooter .contactMe .links a {
   color: white;
   font-size: 2rem;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.container .section.footer .innerFooter .contactMe .links a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media screen and (max-width: 750px) {

@@ -91,8 +91,11 @@ body{
                             flex-direction:row;
                             
                             .landingCardLeft{
+                                display: flex;
+                                flex-direction:column;
+                                justify-content:center;
                                 width:50%;
-                                font-size: clamp(0.3rem, 0.7rem, 3.5rem) ;
+                                font-size: 0.8rem ;
                                 overflow:hidden;
                             }
                             .landingCardRight{
@@ -197,10 +200,13 @@ body{
             
             .skillsHeader{
                 height: 7%;
+                min-height: 3em;
+                padding:5px;
                 display: flex;
                 justify-content: center;
                 .skillsHeaderText{
                     font-size: 3em;
+                    
                     text-align: center;
                     color : white;
                 }
@@ -250,7 +256,10 @@ body{
                                 .skillHeader {
                                     height: 40%;
                                     font-size: 0.9rem;
+                                    
                                     text-align: left;
+                                    
+                                    
                                     
                                 }
                                 .skillContent {
@@ -432,11 +441,8 @@ body{
                                                     .projectContentText{
                                                         text-align: center;
                                                         user-select: none;
-
-                                                        @supports (font-size:0.3em){
-                                                            font-size: 0.3em;
-                                                            
-                                                        }
+                                                        font-size: 0.4em;
+                                                        
                                                         
                                                         
                                                         
@@ -515,6 +521,10 @@ body{
                         a{
                             color: white;
                             font-size:2rem;
+                            transition: transform 0.2s;
+                            &:hover{
+                                transform: scale(1.2);
+                            }
                         }
                         display: flex;
                         flex-direction: row;
