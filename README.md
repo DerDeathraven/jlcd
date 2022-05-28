@@ -55,5 +55,5 @@ This is my sandbox. with that in mind, I will test my newly gained knowledge on 
 
 ## Thanks
 
-[Titus Breede](https://breede.sh) - Helped with design \n
+[Titus Breede](https://breede.sh) - Helped with design <br/>
 [Andrea Dittler](https://webspezi.com) - Bug fixing and mentoring
