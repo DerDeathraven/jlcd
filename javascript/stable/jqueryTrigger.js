@@ -15,3 +15,8 @@ $(".projectScrollbar").on("input",e=>{
   var realLength = width-$(".timeline").width()
   $(".timelineContent").css("left",`${-(value*realLength)}px`)
 })
+$(document).ready(e=>{
+  if(window.innerWidth <= 750){
+    $(".landingCard").addClass("extendHover")
+  }
+})

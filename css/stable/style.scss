@@ -59,6 +59,31 @@ body{
                                 }
                             }
                         }
+                        
+
+                        
+                        }
+                        &.extendHover{
+                            .landingCardHeader{
+                                .landingCardName{
+                                .jean{
+                                    width:40px;
+                                }
+                                .luc{
+                                    width:25px;
+                                }
+                                .chrisoph{
+                                    width:80px;
+                                    
+                                }
+                                .dittler{
+                                    width:60px;
+                                }
+                            }
+                        }
+                        
+
+                        
                         }
                         .landingCardHeader{
                             display:flex;
@@ -75,6 +100,7 @@ body{
                                 span.hidding {
                                     display: inline-block;
                                     overflow: hidden;
+                                    
                                     width: 0px;
                                     transition: width .5s;
                                 }
@@ -131,7 +157,9 @@ body{
                                 transform: scale(1.15);
                             }
                             .landingCardFooterContent{
-                                text-align:center;
+                               display: flex;
+                               flex-direction: column;
+                               text-align: center;
                             }
                         }
                     }
@@ -530,10 +558,7 @@ body{
                         flex-direction: row;
                         justify-content: space-between;
 
-                        @media screen and (max-width:750px) {
-                            flex-direction: column;
-                            
-                        }
+                       
 
                     }
                     

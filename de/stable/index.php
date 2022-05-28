@@ -63,7 +63,7 @@
                         
                             <div class="landingCardFooterContent" >
                                
-                                More <br/> 
+                                <div class="more">More</div>
                                 <i class="fa-solid fa-angles-down"></i>
                                 
                             </div>
