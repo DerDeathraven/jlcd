@@ -1,4 +1,4 @@
-const YEAR_OF_BIRTH = 2001;
+
 var timeline
 var skills = [
         
@@ -213,8 +213,8 @@ var projects = {
      },
 }
 function onLoad(){
-    var time = new Date()
-    $("#geburtstagSpan").text(time.getFullYear()-YEAR_OF_BIRTH)
+    
+
     timeline = new Timeline(projects,$(".timeline"),skills,$(".skillsList"))
     
 }

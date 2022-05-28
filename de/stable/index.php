@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
     <link rel="stylesheet" href="/css/stable/style.css">
+    <meta name="theme-color" content="#434343">
 
      <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

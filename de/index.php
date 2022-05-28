@@ -95,7 +95,7 @@
                 <div class="content">
                     <div class="contentText">
                         <span class="explainText">A more conventional website</span></br>
-                        <span>but still completely without Templates</span>
+                        
                     </div>
                 </div>
             </div>

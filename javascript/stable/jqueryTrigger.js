@@ -1,3 +1,4 @@
+const YEAR_OF_BIRTH = 2001;
 $(".landingCardFooter").on("click", e=>{
     var el = $("#skills").get(0)
     el.scrollIntoView({
@@ -16,7 +17,9 @@ $(".projectScrollbar").on("input",e=>{
   $(".timelineContent").css("left",`${-(value*realLength)}px`)
 })
 $(document).ready(e=>{
+  var time = new Date()
   if(window.innerWidth <= 750){
     $(".landingCard").addClass("extendHover")
   }
+  $("#geburtstagSpan").text(time.getFullYear()-YEAR_OF_BIRTH)
 })
