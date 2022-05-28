@@ -1,32 +1,27 @@
-class TimelineState{
-    constructor(){
-        this.sliderPosition = 0;
-        this.mousedown = false;
-        
-         
-    }
-}
 
 var timeline
 
 
 
-/**
- * Basic idea:
- * timeline -> multiple years 
- * one year -> multiple projects
- * 
- * 
- */
-
 class Timeline{
+    /**
+     * Creates and manages the Timeline
+     * 
+     * @param {Object} yearObj JSON of the Years
+     * @param {JqueryObject} domFather The dom hook
+     * @param {Array<Object>} skillsList propertys to patch trough the skillmanager
+     * @param {JqueryObject} skillDom the skill hook
+     */
     constructor(yearObj,domFather,skillsList,skillDom){
-        this.sate = new TimelineState()
         this.years = []
         this.domFather = domFather
         this.skills = new SkillList(skillDom,skillsList)
         this.fillYears(yearObj)
         this.drawTimeline()
+        
+        /**
+         * Click event handler to rerender the skills
+         */
         var me = this
         $(".project").on("click",(e)=>{
             if($(e.currentTarget).hasClass("active")){
@@ -45,36 +40,39 @@ class Timeline{
                     })
                 })
                 me.skills.renderSkills(skills)
+                me.skills.dom.get(0).scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "nearest"
+                  })
             }
         })
         
     }
+
+    /**
+     * generate Years from the given JSON
+     * @param {*} yearObj 
+     */
     fillYears(yearObj){
         Object.keys(yearObj).forEach(y=>{
             var f = yearObj[y]
             this.years.push(new Year(y,f.projects))
         })
     }
+    /**
+     * fill the Timeline with the years
+     */
     drawTimeline(){
         var container = document.createElement("div")
         $(container).addClass("timelineContent");
         this.years.forEach(y=>{
             $(container).append(y.domElement);
         })
-        var width = this.calculateWidth()
         
 
         this.domFather.append(container)
 
-    }
-    calculateWidth(){
-        var menge = 0
-        this.years.forEach(y=>{
-           menge += y.projects.length
-        })
-        menge =  menge*110
-
-        return menge
     }
 
    
@@ -83,11 +81,22 @@ class Timeline{
 
 
 class Year{
+    /**
+     * 
+     * @param {*} year the year or text that appears on the top
+     * @param {Array<object>} projects all projects that the year should contain
+     */
     constructor(year,projects){
         this.year = year
         this.projects = this.generateProjects(projects)
         this.domElement = this.generateDomElement()
     }
+
+    /**
+     * Generates the Projects from the given JSON
+     * @param {Array<object>} projects 
+     * @returns {Array<Project>} 
+     */
     generateProjects(projects){
         var buffArr = [];
         projects.forEach(e=>{
@@ -95,6 +104,10 @@ class Year{
         })
         return buffArr
     }
+    /**
+     * Generates a div containing all the projects
+     * @returns {HTMLDivElement}
+     */
     generateDomElement(){
         var length
         if(this.projects.length > 0){
@@ -122,15 +135,24 @@ class Year{
     }
 }
 class Project {
+    /**
+     * Generates a new project which contains the specified informations
+     * @param {Object} p JSON of the project
+     */
     constructor(p){
         this.name = p.name;
-        this.github = p.github;
-        this.githubSymbole = p.githubSymbole || '<i class="fa-brands fa-github-square"></i>'
-        this.content = p.content;
+        this.github = p.github; //can be any link
+        this.githubSymbole = p.githubSymbole || '<i class="fa-brands fa-github-square"></i>' //the fontawesome icon at the bottom
+        this.content = p.content; //Text content
         this.picture = p.picture;
-        this.releatedSkills = p.releatedSkills || []
-        this.domElement = this.generateDomElement()
+        this.releatedSkills = p.releatedSkills || [] //Skill that were used in this project
+        this.domElement = this.generateDomElement() // the div of this element
     }
+
+    /**
+     * Generates a new element that contains this project
+     * @returns {HTMLDivElement}
+     */
     generateDomElement(){
         var container = document.createElement("div")
         var header = document.createElement("div")
@@ -146,6 +168,11 @@ class Project {
 
         return container
     }
+
+    /**
+     * To seperate the Content from the Header
+     * @returns {HTMLDivElement}
+     */
     generateDomContent(){
         var content = document.createElement("div")
         var title = document.createElement("div")
