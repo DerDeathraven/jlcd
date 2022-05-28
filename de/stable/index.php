@@ -116,7 +116,7 @@
                 <div class="contactMe">
                     <span>Contact Me</span>
                     <div class="links">
-                        <a href="https://www.linkedin.com/in/jean-luc-dittler-b95064137/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/jean-luc-christoph-dittler-b95064137/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/DerDeathraven" target="_blank"><i class="fa-brands fa-github-square"></i></a>
                         <a href="mailto:jean-luc@jlcd.de?subject=About your website"><i class="fa-solid fa-envelope"></i></a>
                         <a href="http://"><i class="fa-solid fa-file-pdf" target="_blank"></i></a>
