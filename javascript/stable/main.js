@@ -55,7 +55,7 @@ var projects = {
              name: '"Junior" Sys-Admin',
              github: "https://wp.schloss-rohlstorf.de/",
              githubSymbole: '<i class="fa-brands fa-fort-awesome-alt"></i>',
-             content: "Growing up with a web-developer mom lead to me being fluid with OSX at the age of 13. This i used to administrate the macbooks used by my school.",
+             content: "Growing up with a web-developer mom lead to me being fluid with OSX at the age of 13. This I used to administrate the macbooks used by my school.",
              picture: "/images/Gut_Rohlstorf_Herrenhaus.jpg",
             releatedSkills:[
                 "Bash/Batch",
@@ -105,7 +105,7 @@ var projects = {
              {
               name: "Final batch chat",
               github: "https://github.com/DerDeathraven/Batchchat",
-              content: "Using my new developed skill in web-development, i wanted to redo my chat program. I used a HTML frontend to smooth up the user experience.",
+              content: "Using my new developed skill in web-development, I wanted to redo my chat program. I used a HTML frontend to smooth up the user experience.",
               picture: "/images/Batchchat.png",
               releatedSkills:[
                 "Bash/Batch",
@@ -130,7 +130,7 @@ var projects = {
              {
               name: "Art Collection",
               github: "https://kunst.breede.sh/kunstwerke/0",
-              content: "School project: Less programming on my part and more managment and design ",
+              content: "A school project in which I took on me the role of managment and keeping the big picture. ",
               githubSymbole:'<i class="fa-solid fa-link"></i>',
               picture: "/images/bbz.png"
              },
@@ -158,7 +158,7 @@ var projects = {
             {
                 name: "Hako",
                 github: "https://www.hako.com/en/",
-                content: "Working on robotic sweepingmaschines. Being treated as a full member and not a Intern right alongside senior-devs",
+                content: "Working on robotic sweepingmaschines. Being treated as a full member and not a intern right alongside senior-devs",
                 githubSymbole:'<i class="fa-solid fa-link"></i>',
                 picture: "/images/Termine_Header.jpg",
             },
