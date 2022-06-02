@@ -83,8 +83,9 @@
                 <div class="titleLinksContent">
                     <a href="https://www.linkedin.com/in/jean-luc-christoph-dittler-b95064137/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/DerDeathraven" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                    <a href="http://"><i class="fa-solid fa-file-pdf" target="_blank"></i></a></div>
+                    <a href="/pdf/CV.pdf"><i class="fa-solid fa-file-pdf" target="_blank"></i></a>
                 </div>
+            </div>
                 
         </div>
         <div class="choseContent">

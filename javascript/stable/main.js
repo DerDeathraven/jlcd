@@ -177,6 +177,19 @@ var projects = {
                     "ROS"
                 ]
             },
+            {
+                name: "Threejs Smarthome",
+                github: "https://github.com/DerDeathraven/threejs_smarthome_control",
+                content: "This NodeJS Project uses MQTT and Socket.io to render the status of your smarthome devices in realtime and 3D",
+                picture: "/images/screenshot_Smarthome.png",
+                releatedSkills:[
+                    "NodeJS",
+                    "JavaScript",
+                    "<HTML/CSS>",
+                    "Socket.io",
+                    "JQuery",
+                ]
+            },
              
             
                 
@@ -198,7 +211,7 @@ var projects = {
                {
                 name: "Experimental Portfolio",
                 github: "https://github.com/DerDeathraven/jlcd",
-                content: "Using Three.js and CSS3D. This developed out of a weekend of learning 3D modeling inside of a browser.",
+                content: "Using Three.js and CSS3D. This developed out of a weekend of learning 3D programming inside of a browser.",
                 picture: "/images/Bewerbungsfoto.jpg",
                 releatedSkills:[
                     "JavaScript",
