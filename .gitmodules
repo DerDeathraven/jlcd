@@ -1,0 +1,3 @@
+[submodule "landingcard"]
+	path = landingcard
+	url = https://github.com/DerDeathraven/jlcd-Landing-Card.git
