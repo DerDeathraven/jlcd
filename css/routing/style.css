@@ -176,6 +176,22 @@ body {
 
 .container .choseContent .sides.left {
   background-color: #ff1d1e;
+  cursor: default;
+}
+
+.container .choseContent .sides.left .content .contentText .icons {
+  font-size: 3rem;
+}
+
+.container .choseContent .sides.left .content .contentText .icons a {
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container .choseContent .sides.left .content .contentText .icons a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .container .choseContent .sides.right {
@@ -214,7 +230,7 @@ body {
 @media screen and (max-width: 750px) {
   .container .choseContent .sides .content {
     font-size: 0.8em;
-    height: 20%;
+    height: 30%;
   }
 }
 

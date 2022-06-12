@@ -124,6 +124,22 @@ body{
             transition:all 0.2s;
             &.left{
                 background-color:$red-ryb;
+                cursor: default;
+                .content{
+                    .contentText{
+                        .icons{
+                            
+                            font-size: 3rem;
+                            a{
+                                color:white;
+                                transition:all 0.2s;
+                                &:hover{
+                                    transform: scale(1.03);
+                                }
+                            }
+                        }
+                    }
+                }
             }
             &.right{
                 background-color:lighten($black, 20%);
@@ -144,7 +160,7 @@ body{
                 height: 0;
                 @media screen and (max-width: 750px) {
                     font-size: 0.8em;
-                    height: 20%;
+                    height: 30%;
                 }
                 transition:all 0.2s;
                 -webkit-user-select: none;  /* Chrome all / Safari all */

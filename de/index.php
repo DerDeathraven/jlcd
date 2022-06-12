@@ -95,7 +95,13 @@
                 </div>
                 <div class="content">
                     <div class="contentText">
-                        <span class="explainText">A more conventional website</span></br>
+                       
+                        <span>Choose your Flavor</span>
+                        <div class="icons">
+                        <a href="https://jlcd.de/de/stable"><i class="fa-brands fa-js-square"></i></a>
+                        <a href="https://jlcd.de/de/stable/angular"><i class="fa-brands fa-angular"></i></a>
+
+                        </div>
                         
                     </div>
                 </div>

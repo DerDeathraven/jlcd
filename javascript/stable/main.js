@@ -45,6 +45,10 @@ var skills = [
         "name":"ROS",
         "startDate":2021,
     },  
+    {
+        "name":"Angular",
+        "startDate":2021,
+    }, 
    
     
     ]
@@ -206,6 +210,19 @@ var projects = {
                     "JavaScript",
                     "<HTML/CSS>",
                     "JQuery"
+                ]
+               },
+               {
+                name: "Angular Portfolio",
+                github: "https://jlcd.de/de/stable/angular",
+                content: "My Portfolio, rewritten in Angular. As a weekend project to teach myself the basics of Angular.",
+                picture: "/images/Angular.jpg",
+                githubSymbole: '<i class="fa-brands fa-angular"></i>',
+                releatedSkills:[
+                    "JavaScript",
+                    "<HTML/CSS>",
+                    "JQuery",
+                    "Angular"
                 ]
                },
                {
