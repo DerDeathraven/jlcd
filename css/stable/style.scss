@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16px;
+    overflow-x: hidden;
 }
 .container{
     font-family: "Roboto Slab", serif;
@@ -256,12 +257,15 @@ body{
                             padding-bottom: 10px;
                             position: relative;
                             width: 50%;
-                            @media only screen and (max-width: 750px){
+                            @media only screen and (max-width: 1000px){
                                 width: 98%;
                                
                                 gap: 0.5%;
-                                overflow: scroll;
                                 
+                                
+                            }
+                            @media only screen and (hover:none){
+                                overflow: scroll;
                             }
                            
                             display: flex;
@@ -271,7 +275,7 @@ body{
                             gap: 2%;
                            
                             .skillContainer {
-                                @media only screen and (max-width: 750px){
+                                @media only screen and (max-width: 1000px){
                                     margin-bottom:30px;
                                     
                                 }
@@ -351,7 +355,7 @@ body{
                     .projectsContainer{
                         
                         height: 50%;
-                        @media only screen and (max-width: 750px){
+                        @media only screen and (max-width: 1000px){
                             height: 60%;
                         }
                         display: flex;
@@ -363,12 +367,16 @@ body{
                             position: relative;
                             
                             width: 50%;
-                            @media only screen and (max-width: 750px){
+                            @media only screen and (max-width: 1000px){
                                 width: 98%;
+                                
+                                
+                            }
+                            @media only screen and (hover:none){
                                 .projectScrollbar{
+                                    
                                     display: none;
                                 }
-                                
                             }
                             height: 50%;
                             
@@ -387,7 +395,7 @@ body{
                                 position: relative;
                                 overflow:hidden;
                                 
-                                @media only screen and (max-width: 750px){
+                                @media only screen and (hover:none){
                                     overflow-x:scroll;
                                     height:100%;
                                 }
@@ -475,7 +483,7 @@ body{
                                                         
                                                         
                                                         height:60%;
-                                                        @media only screen and (max-width: 750px){
+                                                        @media only screen and (max-width: 1000px){
                                                             -webkit-text-size-adjust: 100%;
                                                             font-size: 16px * 0.4;
                                                         }
